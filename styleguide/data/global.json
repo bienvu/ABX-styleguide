@@ -42,6 +42,11 @@
       "id":"ST-10",
       "name":"call-to-action",
       "group":"component"
+    },
+    {
+      "id":"ST-10",
+      "name":"slider",
+      "group":"component"
     }
   ]
 }
