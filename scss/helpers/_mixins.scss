@@ -31,11 +31,27 @@
 }
 
 @mixin helvetica {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@mixin bebas-neue-bold {
-  font-family: "BebasNeue-Bold", Helvetica, Arial, sans-serif;
+@mixin gotham-bold {
+  font-family: "gotham-bold", Helvetica, Arial, sans-serif;
+}
+
+@mixin gotham-light {
+  font-family: "gotham-light", Helvetica, Arial, sans-serif;
+}
+
+@mixin gotham-medium {
+  font-family: "gotham-medium", Helvetica, Arial, sans-serif;
+}
+
+@mixin gotham-thinitalic {
+  font-family: "gotham-thinitalic", Helvetica, Arial, sans-serif;
+}
+
+@mixin gotham-book {
+  font-family: "gotham-book", Helvetica, Arial, sans-serif;
 }
 
 //Single image background with retina support
@@ -73,8 +89,20 @@
       content: 'Tablet' !important;
     }
 
+    @include susy-media(tablet-landscape) {
+      content: 'Tablet Landscape' !important;
+    }
+
     @include susy-media(desktop) {
-      content: 'Small desktop' !important;
+      content: 'Desktop' !important;
+    }
+
+    @include susy-media(desktop-wide) {
+      content: 'Wide desktop' !important;
+    }
+
+    @include susy-media(desktop-superwide) {
+      content: 'Super wide desktop' !important;
     }
   }
 }
@@ -104,4 +132,40 @@
   &:after {
     clear: both;
   }
+}
+
+// Adds a simple gradient overlay inside a block.
+@mixin gradient-overlay($gr-color, $gr-opacity) {
+  position: relative;
+
+  &:before {
+    background: rgba($gr-color, $gr-opacity);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@mixin full-area-element($z-index) {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: $z-index;
+}
+
+// Simple mixin for creating css circle.
+@mixin white-circle($width: 62px, $height: 62px, $bg: $white) {
+  background: $bg;
+  border-radius: 50%;
+  display: block;
+  height: rem($height);
+  line-height: rem($height);
+  position: relative;
+  text-align: center;
+  width: rem($width);
 }

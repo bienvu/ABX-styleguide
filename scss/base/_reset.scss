@@ -152,18 +152,13 @@ img {
   height: auto;
 }
 
+iframe,
 img,
 object,
 embed {
   max-width: 100%;
 }
 
-textarea,
 input {
-  appearance: none;
-  box-shadow: none;
   box-sizing: border-box;
-  margin: 0;
-  max-width: 100%;
-  outline: 0 none;
 }
