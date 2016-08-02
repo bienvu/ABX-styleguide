@@ -6,6 +6,8 @@ input {
 
   &[type='submit'] {
     @extend %btn;
+    @extend %btn--bg-red;
+    @extend %btn--small;
     line-height: inherit;
     border-radius: 0;
   }
@@ -51,12 +53,17 @@ input[type="submit"] {
 }
 
 button {
+  @extend %btn;
+  @extend %btn--bg-red;
+  @extend %btn--small;
+
   &:active,
   &:focus,
   &:hover {
     appearance: none;
     color: inherit;
     outline: 0;
+    color: $white;
   }
 }
 

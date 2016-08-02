@@ -24,11 +24,6 @@
       "hidecode":true
     },
     {
-      "id":"ST-02",
-      "name":"paragraphs",
-      "group":"basic"
-    },
-    {
       "id":"ST-03",
       "name":"links",
       "group":"basic"
@@ -39,14 +34,14 @@
       "group":"basic"
     },
     {
-      "id":"ST-08",
-      "name":"background",
-      "group":"helper"
-    },
-    {
       "id":"ST-09",
       "name":"button",
       "group":"helper"
+    },
+    {
+      "id":"ST-10",
+      "name":"call-to-action",
+      "group":"component"
     }
   ]
 }

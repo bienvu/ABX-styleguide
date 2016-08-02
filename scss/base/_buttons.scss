@@ -1,6 +1,7 @@
 %btn,
 .btn {
   @include gotham-bold;
+  background-color: transparent;
   border: 1px solid transparent;
   display: inline-block;
   font-size: rem(15px);
