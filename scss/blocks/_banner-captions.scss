@@ -36,8 +36,8 @@
     }
 
     @include susy-media(desktop) {
-      margin-top: rem(40px);
-      padding-top: rem(60px);
+      margin-top: rem(30px);
+      padding-top: rem(40px);
 
       &:before {
         border-top: 1px solid $white;
@@ -63,6 +63,14 @@
       @include susy-media(desktop) {
         width: auto;
       }
+    }
+  }
+
+  &__link {
+    margin-top: rem(20px);
+
+    @include susy-media(desktop) {
+      margin-top: rem(53px);
     }
   }
 
