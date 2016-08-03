@@ -1,38 +1,7 @@
 {# Block Product #}
-{% set blockproduct = [
-  {
-    'blockproduct__icon' : 'icon-paw',
-    'blockproduct__title' : 'Companions',
-  },
-  {
-    'blockproduct__icon' : 'icon-cow',
-    'blockproduct__title' : 'Large Animals',
-  },
-  {
-    'blockproduct__icon' : 'icon-horseshoe',
-    'blockproduct__title' : 'Equine',
-  },
-  {
-    'blockproduct__icon' : 'icon-rabbit',
-    'blockproduct__title' : 'Small mammals',
-  },
-  {
-    'blockproduct__icon' : 'icon-microscope',
-    'blockproduct__title' : 'Research animals',
-  },
-  {
-    'blockproduct__icon' : 'icon-salamander',
-    'blockproduct__title' : 'Exotic animals',
-  },
-  {
-    'blockproduct__icon' : 'icon-gorilla',
-    'blockproduct__title' : 'Wildlife',
-  },
-]
-%}
 
 {% block blockproduct %}
-  <div class="block-product-icon block-product-icon--bg-blue">
+  <div class="block-product-icon {{ classProduct }}">
     <div class="container">
       <h2 class="section-title">{{ product_icon_title }}</h2>
       <div class="section-description">{{ product_icon_description }}</div>

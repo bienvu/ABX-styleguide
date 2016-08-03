@@ -47,6 +47,11 @@
       "id":"ST-10",
       "name":"slider",
       "group":"component"
+    },
+    {
+      "id":"ST-13",
+      "name":"box-icon",
+      "group":"component"
     }
   ]
 }
