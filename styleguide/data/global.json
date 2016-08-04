@@ -57,6 +57,11 @@
       "id":"ST-12",
       "name":"banner",
       "group":"component"
+    },
+    {
+      "id":"ST-14",
+      "name":"grid-slide",
+      "group":"component"
     }
   ]
 }
