@@ -1,15 +1,15 @@
 .block-guide {
-  margin-bottom: rem(27px);
-  margin-top: rem(34px);
+  padding-bottom: rem(27px);
+  padding-top: rem(34px);
 
   @include susy-media(tablet) {
-    margin-bottom: rem(47px);
-    margin-top: rem(67px);
+    padding-bottom: rem(47px);
+    padding-top: rem(67px);
   }
 
   @include susy-media(desktop) {
-    margin-bottom: rem(77px);
-    margin-top: rem(79px);
+    padding-bottom: rem(77px);
+    padding-top: rem(79px);
   }
 
   .section-title {
@@ -145,7 +145,8 @@
           margin-bottom: 20px;
 
           @include susy-media(tablet) {
-            margin-right: 20px;
+            margin-right: 35px;
+            margin-bottom: 0;
 
             &:last-child {
               margin-right: 0;
@@ -160,5 +161,9 @@
         }
       }
     }
+  }
+
+  &--bg-grey {
+    background-color: $gray-f8;
   }
 }
