@@ -131,14 +131,17 @@
     .block-guide {
       &__links {
         text-align: center;
-        margin-right: 20px;
 
         @include susy-media(tablet) {
           margin-top: 76px;
         }
 
-        &:last-child {
-          margin-right: 0;
+        a {
+          margin-right: 20px;
+
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
 
