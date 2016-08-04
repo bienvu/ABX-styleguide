@@ -35,10 +35,10 @@
 
   &__item {
     color: $white;
+    text-align: center;
     margin-bottom: rem(2px);
     width: 25%;
     float: left;
-    text-align: center;
 
     @include susy-media(tablet) {
       width: calc(100% / 7);
@@ -87,6 +87,69 @@
     }
   }
 
+  // Icon modifiers
+  &--large {
+    .block-product-icon__item {
+      &__icon {
+        @include susy-media(tablet) {
+          font-size: rem(86px);
+        }
+      }
+
+      &__title {
+        max-width: inherit;
+        font-size: rem(15px);
+        line-height: rem(20px);
+
+        @include susy-media(tablet) {
+          padding: rem(0 15px);
+        }
+
+        @include susy-media(desktop) {
+          font-size: rem(20px);
+          line-height: rem(31px);
+          padding: rem(0 50px);
+        }
+      }
+    }
+  }
+
+  // Grid item modifiers
+  &--grid-full {
+    .block-product-icon {
+      &__item {
+        width: 25%;
+        float: left;
+        margin-bottom: rem(2px);
+
+        @include susy-media(tablet) {
+          width: calc(100% / 7);
+          margin-bottom: rem(45px);
+        }
+      }
+    }
+  }
+
+  &--grid-medium {
+    @include susy-media(desktop) {
+      padding-left: rem(175px);
+      padding-right: rem(175px);
+    }
+
+    .block-product-icon {
+      &__item {
+        width: 50%;
+        float: left;
+        margin-bottom: rem(15px);
+
+        @include susy-media(tablet) {
+          width: 25%;
+          margin-bottom: rem(45px);
+        }
+      }
+    }
+  }
+
   // Background color modifiers.
   &--bg-blue {
     background: linear-gradient(to bottom, $blue 0%, $blue-a9 100%);
@@ -101,6 +164,34 @@
             text-decoration: underline;
           }
         }
+      }
+    }
+  }
+
+  &--bg-dark {
+    background-color: $base-color;
+    color: $white;
+
+    @include susy-media(desktop) {
+      padding-top: rem(130px);
+      padding-bottom: rem(25px);
+    }
+
+    .block-product-icon {
+      &__item {
+        color: $white;
+
+        &:hover {
+          h3 {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .section-title {
+      @include susy-media(desktop) {
+        margin-bottom: rem(134px);
       }
     }
   }
