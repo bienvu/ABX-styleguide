@@ -62,6 +62,11 @@
       "id":"ST-14",
       "name":"grid-slide",
       "group":"component"
+    },
+    {
+      "id":"ST-19",
+      "name":"block-guid",
+      "group":"component"
     }
   ]
 }
