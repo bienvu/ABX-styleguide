@@ -136,6 +136,7 @@
 .slick-dots {
   margin-top: rem(13px);
   text-align: center;
+  padding: 0;
 
   @include susy-media(tablet) {
     margin-top: rem(36px);
@@ -159,6 +160,7 @@
     padding: 0;
     text-indent: -999em;
     width: rem(9px);
+    min-width: inherit;
 
     &:hover {
       background: $blue-light;
