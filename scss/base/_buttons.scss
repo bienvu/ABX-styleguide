@@ -21,8 +21,9 @@
 
   &--medium {
     max-width: rem(292px);
-    padding: rem(14px 17px 12px);
+    padding: rem(10px 14px 10px);
     width: 100%;
+    font-size: rem(12px);
 
     @include susy-media(tablet) {
       max-width: inherit;

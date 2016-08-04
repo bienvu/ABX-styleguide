@@ -54,6 +54,30 @@
     }
   }
 
+  &--has-button {
+    height: rem(250px);
+    
+    @include susy-media(tablet) {
+      height: rem(360px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(560px);
+    }
+
+    .banner-caption {
+      &__description {
+        padding-left: rem(35px);
+        padding-right: rem(35px);
+
+        @include susy-media(tablet) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
   &--height-big {
     height: rem(183px);
 

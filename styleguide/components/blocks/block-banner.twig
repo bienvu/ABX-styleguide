@@ -16,6 +16,9 @@
         {% if item.block_banner__description is not empty %}
           <div class="banner-caption__description"><p>{{ item.block_banner__description }}</p></div>
         {% endif %}
+        {% if item.block_banner__link is not empty %}
+          <div class="banner-caption__link"><a class="btn btn--medium btn--bg-red">{{ item.block_banner__link }}</a></div>
+        {% endif %}
       </div>
     </div>
   {% endfor %}

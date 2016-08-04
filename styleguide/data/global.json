@@ -52,6 +52,11 @@
       "id":"ST-13",
       "name":"box-icon",
       "group":"component"
+    },
+    {
+      "id":"ST-12",
+      "name":"banner",
+      "group":"component"
     }
   ]
 }
