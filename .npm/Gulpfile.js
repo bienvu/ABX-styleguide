@@ -28,7 +28,7 @@ var gulp = require('gulp'),
 gulp.task('local-development', ['sass-dev', 'styleguide'], function () {
   browserSync({
     server: {
-      baseDir: ["../styleguide", "../"]
+      baseDir: ["../"]
     },
     files: ["css/styles.css", src.html]
   });
