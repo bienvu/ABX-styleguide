@@ -1,15 +1,15 @@
 .block-guide {
-  margin-bottom: rem(27px);
-  margin-top: rem(34px);
+  padding-bottom: rem(27px);
+  padding-top: rem(34px);
 
   @include susy-media(tablet) {
-    margin-bottom: rem(47px);
-    margin-top: rem(67px);
+    padding-bottom: rem(47px);
+    padding-top: rem(67px);
   }
 
   @include susy-media(desktop) {
-    margin-bottom: rem(77px);
-    margin-top: rem(79px);
+    padding-bottom: rem(77px);
+    padding-top: rem(79px);
   }
 
   .section-title {
@@ -113,6 +113,10 @@
           padding: 0;
         }
       }
+
+      label {
+        font-size: rem(15px);
+      }
     }
   }
 
@@ -125,5 +129,41 @@
       color: $blue;
       font-size: rem(20px);
     }
+  }
+
+  &--color-red {
+    .block-guide {
+      &__links {
+        text-align: center;
+        margin-top: 40px;
+
+        @include susy-media(tablet) {
+          margin-top: 76px;
+        }
+
+        a {
+          margin-bottom: 20px;
+
+          @include susy-media(tablet) {
+            margin-right: 35px;
+            margin-bottom: 0;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      &__body {
+        &__title {
+          color: $red-light;
+        }
+      }
+    }
+  }
+
+  &--bg-grey {
+    background-color: $gray-f8;
   }
 }

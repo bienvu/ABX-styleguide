@@ -100,6 +100,7 @@
   width: rem(72px);
   z-index: 5;
   font-size: 0;
+  min-width: inherit;
 
   &:before {
     @extend %icons;
