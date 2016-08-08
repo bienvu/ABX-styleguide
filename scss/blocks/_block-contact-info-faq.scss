@@ -1,0 +1,142 @@
+.block-contact-info-faq {
+  overflow: hidden;
+  position: relative;
+
+  @include susy-media(desktop) {
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+
+    &:before {
+      background-color: $gray-f8;
+      left: 0;
+      width: 64%;
+    }
+
+    &:after {
+      background-color: $blue-ea;
+      right: 0;
+      width: 36%;
+    }
+  }
+
+  &__content {
+    @extend %clearfix;
+
+    @include susy-media(desktop) {
+      @include pad(1 of $susy-desktop);
+    }
+  }
+
+	&__left {
+    background-color: $gray-f8;
+    margin: rem(0 -$container-margin);
+    padding: rem(0 $container-margin);
+
+    @include susy-media(tablet) {
+      padding: rem(0 $container-margin-medium 23px $container-margin-medium);
+      margin: rem(0 -$container-margin-medium);
+    }
+
+    @include susy-media(desktop) {
+      @include span(8 of 12);
+      padding: rem(0 0 107px 0);
+      margin: 0;
+    }
+	}
+
+	&__right {
+    padding: rem(32px $container-margin 0 $container-margin);
+    background-color: $blue-ea;
+    margin: rem(0 -$container-margin);
+    
+    @include susy-media(tablet) {
+      padding: rem(0 $container-margin-medium 0 $container-margin-medium);
+      margin: rem(0 -$container-margin-medium);
+    }
+
+    @include susy-media(desktop) {
+      @include span(4 of 12 last);
+      padding: rem(0 0 0 78px);
+      background-color: transparent;
+      margin: 0;
+    }
+	}
+
+  // Overide style block-tabs.
+  .block-tabs {
+    margin-bottom: 0;
+    margin-top: rem(55px);
+    padding-bottom: rem(64px);
+
+    @include susy-media(tabletOnly) {
+      @include pad(1 of $susy-tablet);
+      margin-top: 0;
+      padding-top: rem(30px);
+    }
+    
+    @include susy-media(desktop) {
+      padding-right: rem(107px);
+      margin-bottom: 0;
+    }
+
+    &__inner-wrapper {
+      padding: 0;
+    }
+  }
+
+  // Overide style block-contact-info.
+  .block-contact-info {
+    padding-top: rem(77px);
+
+    @include susy-media(tabletOnly) {
+      @include pad(1 of $susy-tablet);
+    }
+
+    &__wrap {
+      
+        >.block-contact-info__item {
+          @include susy-media(tabletOnly) {
+            @include span(4 of 8);
+          }
+        }
+        >.block-contact-info__item__wrap {
+          @include susy-media(tabletOnly) {
+            @include span(4 of 8 last);
+          }
+        }
+    }
+
+    &__item__wrap{
+      @include susy-media(desktop) {
+        margin-top: rem(120px);
+      }
+    }
+
+    &__body {
+      line-height: rem(20px);
+    }
+  }
+
+  .block-faqs {
+    &__item {
+      &__body {
+        display: none;
+
+        &.is-active {
+          display: block;
+        }
+
+        p {
+          padding-left: rem(18px);
+        }
+      }
+    }
+  }
+}

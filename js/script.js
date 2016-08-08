@@ -106,6 +106,23 @@
 
   $('.js-tabs li').on('click', jsTabs);
 
+  // Config faq
+  var jsTabsFaq = function(e) {
+    e.preventDefault();
+
+    var $this = $(this);
+        $tab_index = $this.index();
+        $content_item = $('.block-faqs__item > div');
+        $js_tabs = $('.block-faqs__item h2');
+
+      $js_tabs.removeClass('is-active');
+      $this.children().addClass('is-active');
+      $content_item.removeClass('is-active');
+      $content_item.eq( $tab_index ).addClass('is-active');
+  };
+
+  $('.block-faqs__item').on('click', jsTabsFaq);
+
   // Config select tabs.
   var jsSelect = function(e) {
       $tab_index = $( ".js-select option:selected" ).index();
