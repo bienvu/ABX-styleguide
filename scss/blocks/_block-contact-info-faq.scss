@@ -72,31 +72,47 @@
   // Overide style block-tabs.
   .block-tabs {
     margin-bottom: 0;
-    margin-top: rem(55px);
     padding-bottom: rem(64px);
 
     @include susy-media(tabletOnly) {
-      @include pad(1 of $susy-tablet);
       margin-top: 0;
       padding-top: rem(30px);
+      padding-left: rem(30px);
+      padding-right: rem(30px);
     }
     
     @include susy-media(desktop) {
       padding-right: rem(107px);
       margin-bottom: 0;
+      margin-top: rem(55px);
     }
 
     &__inner-wrapper {
-      padding: 0;
+      padding-top: rem(50px);
+
+      @include susy-media(tabletOnly) {
+        padding: rem(30px 0 0);
+      }
+
+      @include susy-media(desktop) {
+        padding: 0;
+      }
     }
   }
 
   // Overide style block-contact-info.
   .block-contact-info {
-    padding-top: rem(77px);
+    padding-top: rem(20px);
+    padding-bottom: rem(50px);
 
     @include susy-media(tabletOnly) {
-      @include pad(1 of $susy-tablet);
+      padding-top: rem(40px);
+      padding-left: rem(30px);
+      padding-right: rem(30px);
+    }
+
+    @include susy-media(desktop) {
+      padding-top: rem(77px);
     }
 
     &__wrap {
@@ -114,6 +130,10 @@
     }
 
     &__item__wrap{
+      @include susy-media(mobileOnly) {
+        margin-top: rem(70px);
+      }
+
       @include susy-media(desktop) {
         margin-top: rem(120px);
       }
@@ -126,6 +146,10 @@
 
   .block-faqs {
     &__item {
+      &__title {
+        cursor: pointer;
+      }
+
       &__body {
         display: none;
 

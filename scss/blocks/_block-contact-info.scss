@@ -44,6 +44,10 @@
 
   &__link {
     margin-top: rem(26px);
+    
+    @include susy-media(mobileOnly) {
+      text-align: center;
+    }
   }
 
   &__item {
@@ -89,6 +93,10 @@
         padding-bottom: rem(20px);
         border-bottom: 1px solid $gray-dd;
         font-size: rem(15px);
+
+        @include susy-media(mobileOnly) {
+          margin-bottom: rem(10px);
+        }
       }
     }
   }
