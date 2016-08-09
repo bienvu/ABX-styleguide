@@ -18,54 +18,49 @@
   ],
   "list_components":[
     {
-      "id":"ST-01",
+      "id":"ABXMED-1",
       "name":"headings",
       "group":"basic",
       "hidecode":true
     },
     {
-      "id":"ST-03",
+      "id":"ABXMED-2",
       "name":"links",
       "group":"basic"
     },
     {
-      "id":"ST-04",
-      "name":"form",
-      "group":"basic"
-    },
-    {
-      "id":"ST-09",
+      "id":"ABXMED-09",
       "name":"button",
       "group":"helper"
     },
     {
-      "id":"ST-10",
+      "id":"ABXMED-10",
       "name":"call-to-action",
       "group":"component"
     },
     {
-      "id":"ST-13",
+      "id":"ABXMED-13",
       "name":"slider",
       "group":"component"
     },
     {
-      "id":"ST-18",
-      "name":"box-icon",
-      "group":"component"
-    },
-    {
-      "id":"ST-15",
+      "id":"ABXMED-15",
       "name":"banner",
       "group":"component"
     },
     {
-      "id":"ST-14",
+      "id":"ABXMED-14",
       "name":"grid-slide",
       "group":"component"
     },
     {
-      "id":"ST-19",
-      "name":"block-guid",
+      "id":"ABXMED-18",
+      "name":"box-icon",
+      "group":"component"
+    },
+    {
+      "id":"ABXMED-19",
+      "name":"block-guide",
       "group":"component"
     }
   ]

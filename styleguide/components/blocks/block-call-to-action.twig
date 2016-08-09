@@ -3,7 +3,7 @@
   {% for item in block_cta %}
     <div class="{{ item.block_cta__class }}">
       <div class="block-cta__background__image">
-        <img width="1764" height="630" typeof="foaf:Image" alt="work-with-us" src="/sites/default/files/background-images/work-with-us-banner.jpg">
+        {{ item.block_cta__image }}
       </div>
       <div class="block-cta__content">
         {% if item.block_cta__title is not empty %}

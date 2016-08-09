@@ -72,6 +72,10 @@
     @include susy-media(desktop) {
       margin-top: rem(53px);
     }
+
+    .btn {
+      margin-bottom: 0;
+    }
   }
 
   // Modifier for bold description
