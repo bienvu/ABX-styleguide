@@ -23,12 +23,25 @@
   &--dark {
     background-color: $gray-c3;
     color: $black;
+
+    .banner-caption__description {
+      &:before {
+        border-top: 1px solid $black;
+      }
+    }
   }
 
   &--light {
     color: $white;
   }
 
+  &--light-overlay {
+    @include gradient-overlay($white, .3);
+  }
+
+  &--dark-overlay {
+    @include gradient-overlay($black, .3);
+  }
   // Banner height modifiers.
   &--height-small {
     height: rem(120px);
@@ -55,14 +68,8 @@
   }
 
   &--has-button {
-    height: rem(250px);
-    
-    @include susy-media(tablet) {
-      height: rem(360px);
-    }
-
-    @include susy-media(desktop) {
-      height: rem(560px);
+    @include susy-media(mobileOnly) {
+      height: rem(250px);
     }
 
     .banner-caption {
@@ -113,10 +120,5 @@
         }
       }
     }
-  }
-
-  // Banner overlay modifier
-  &--dark-overlay {
-    @include gradient-overlay($black, .3);
   }
 }

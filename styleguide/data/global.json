@@ -1,6 +1,6 @@
 {
   "site_title": "FFWvn Styleguide",
-  "img_path": "images-demo/",
+  "img_path": "../images/",
   "project_path":"https://propeople-us.atlassian.net/browse/",
   "list_groups": [
     {
@@ -18,48 +18,43 @@
   ],
   "list_components":[
     {
-      "id":"ABXMED-1",
       "name":"headings",
       "group":"basic",
       "hidecode":true
     },
     {
-      "id":"ABXMED-2",
       "name":"links",
       "group":"basic"
     },
     {
-      "id":"ABXMED-09",
       "name":"button",
+      "group":"basic"
+    },
+    {
+      "name":"pager",
+      "group":"basic"
+    },
+    {
+      "name":"icomoon",
       "group":"helper"
     },
     {
-      "id":"ABXMED-10",
-      "name":"call-to-action",
-      "group":"component"
-    },
-    {
-      "id":"ABXMED-13",
       "name":"slider",
       "group":"component"
     },
     {
-      "id":"ABXMED-15",
       "name":"banner",
       "group":"component"
     },
     {
-      "id":"ABXMED-14",
       "name":"grid-slide",
       "group":"component"
     },
     {
-      "id":"ABXMED-18",
       "name":"box-icon",
       "group":"component"
     },
     {
-      "id":"ABXMED-19",
       "name":"block-guide",
       "group":"component"
     }

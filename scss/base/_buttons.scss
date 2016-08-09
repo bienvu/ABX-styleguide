@@ -14,6 +14,10 @@
     font-size: rem(13px);
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   // Dimensions modifiers.
   &--small {
     min-width: rem(148px);
@@ -24,7 +28,6 @@
     max-width: rem(292px);
     padding: rem(10px 14px 10px);
     width: 100%;
-    font-size: rem(12px);
 
     @include susy-media(tablet) {
       max-width: inherit;
