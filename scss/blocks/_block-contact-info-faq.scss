@@ -36,17 +36,17 @@
 
 	&__left {
     background-color: $gray-f8;
-    margin: rem(0 -$container-margin);
-    padding: rem(0 $container-margin);
+    margin: 0 rem(-$container-margin);
+    padding: 0 rem($container-margin);
 
     @include susy-media(tablet) {
-      padding: rem(0 $container-margin-medium 23px $container-margin-medium);
-      margin: rem(0 -$container-margin-medium);
+      padding: 0 rem($container-margin-medium 23px $container-margin-medium);
+      margin: 0 rem(-$container-margin-medium);
     }
 
     @include susy-media(desktop) {
       @include span(8 of 12);
-      padding: rem(0 0 107px 0);
+      padding: 0 0 rem(107px) 0;
       margin: 0;
     }
 	}
@@ -54,16 +54,16 @@
 	&__right {
     padding: rem(32px $container-margin 0 $container-margin);
     background-color: $blue-ea;
-    margin: rem(0 -$container-margin);
+    margin: 0 rem(-$container-margin);
     
     @include susy-media(tablet) {
-      padding: rem(0 $container-margin-medium 0 $container-margin-medium);
-      margin: rem(0 -$container-margin-medium);
+      padding: 0 rem($container-margin-medium);
+      margin: 0 rem(-$container-margin-medium);
     }
 
     @include susy-media(desktop) {
       @include span(4 of 12 last);
-      padding: rem(0 0 0 78px);
+      padding: 0 0 0 rem(78px);
       background-color: transparent;
       margin: 0;
     }
@@ -90,8 +90,8 @@
     &__inner-wrapper {
       padding-top: rem(50px);
 
-      @include susy-media(tabletOnly) {
-        padding: rem(30px 0 0);
+      @include susy-media(tablet) {
+        padding: rem(30px) 0 0;
       }
 
       @include susy-media(desktop) {
@@ -152,13 +152,10 @@
 
       &__body {
         display: none;
+        padding-left: rem(18px);
 
         &.is-active {
           display: block;
-        }
-
-        p {
-          padding-left: rem(18px);
         }
       }
     }

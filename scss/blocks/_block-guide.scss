@@ -113,10 +113,6 @@
           padding: 0;
         }
       }
-
-      label {
-        font-size: rem(15px);
-      }
     }
   }
 
@@ -131,39 +127,37 @@
     }
   }
 
+  &__label {
+    font-size: rem(15px);
+    margin-bottom: rem(4px);
+    display: block;
+  }
+
+  &__links {
+    text-align: center;
+    margin-top: rem(40px);
+
+    @include susy-media(tablet) {
+      margin-top: rem(76px);
+    }
+
+    a {
+      margin-bottom: rem(20px);
+
+      @include susy-media(tablet) {
+        margin: 0 rem(17.5px);
+      }
+    }
+  }
+
+  // Modifiers text color
   &--color-red {
     .block-guide {
-      &__links {
-        text-align: center;
-        margin-top: 40px;
-
-        @include susy-media(tablet) {
-          margin-top: 76px;
-        }
-
-        a {
-          margin-bottom: 20px;
-
-          @include susy-media(tablet) {
-            margin-right: 35px;
-            margin-bottom: 0;
-
-            &:last-child {
-              margin-right: 0;
-            }
-          }
-        }
-      }
-
       &__body {
         &__title {
           color: $red-light;
         }
       }
     }
-  }
-
-  &--bg-grey {
-    background-color: $gray-f8;
   }
 }

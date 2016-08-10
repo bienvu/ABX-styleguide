@@ -1,23 +1,29 @@
 {% block blockGuide %}
-<div class="block-guide">
+<div class="block-guide {{classBlockGuide}}">
   <div class="container">
-    <h2 class="section-title">Simple Operation </h2>
-    <h3 class="section-description">With Results You Can Count On</h3>
-
+    <h2 class="section-title">{{ sectionTitle }}</h2>
+    <h3 class="section-description">{{ sectionDescription }}</h3>
     <div class="block-guide__contents">
-      <div class="block-guide__contents__item">
-        <img src="../../images/images-pages/simple-step1.png" alt="Step 1">
-        <h3 class="block-guide__body__title">Insert Sample</h3>
-      </div>
-      <div class="block-guide__contents__item">
-        <img src="../../images/images-pages/simple-step2.png" alt="Step 2">
-        <h3 class="block-guide__body__title">Insert Rotor</h3>
-      </div>
-      <div class="block-guide__contents__item">
-        <img src="../../images/images-pages/simple-step3.png" alt="Step 3">
-        <h3 class="block-guide__body__title">Read Results</h3>
-      </div>
+      {% for item in block_guide %}
+        <div class="block-guide__contents__item">
+          <img src="{{ img_path }}{{ item.block_guide__image }}" alt="Step 3">
+          {% if item.block_guide__label is not empty %}
+          <span class="block-guide__label">{{ item.block_guide__label}}</span>
+          {% endif %}
+          <h3 class="block-guide__body__title">{{ item.block_guide__title }}</h3>
+        </div>
+      {% endfor %}
     </div>
+    {% if textLinkOne or textLinkTwo is not empty %}
+    <div class="block-guide__links"> 
+      {% if textLinkOne is not empty %}
+      <a href="#" class="btn btn--medium btn--border-blue">{{ textLinkOne }}</a>
+      {% endif %}
+      {% if textLinkTwo is not empty %}
+      <a href="#" class="btn btn--medium btn--border-red">{{ textLinkTwo }}</a>
+      {% endif %}
+    </div>
+    {% endif %}
   </div>
 </div>
 {% endblock %}
