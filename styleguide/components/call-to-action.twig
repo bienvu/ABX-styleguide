@@ -1,13 +1,126 @@
-<div class="container">
-  {% set block_cta = [
-    {
-      'block_cta__class' : 'block-cta',
-      'block_cta__title' : 'Abaxis Mission',
-      'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
-      'block_cta__link' : '<a class="btn btn--medium btn--border-blue" href="#" title="link">More About Us</a>'
-    }
-  ]
-  %}
+{% set block_cta = [
+  {
+    'block_cta__class' : 'block-cta block-cta--content-large',
+    'block_cta__content__class' : 'align-center',
+    'block_cta__title' : 'Abaxis Mission',
+    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+    'block_cta__link' : '<a class="btn btn--medium btn--border-blue" href="#" title="link">More About Us</a>'
+  }
+]
+%}
+<h2 class="title-demo">No Image, Content Align Center</h2>
+{% include "blocks/block-call-to-action.twig" %}
 
-  {% include "blocks/block-call-to-action.twig" %}
-</div>
+{% set block_cta = [
+  {
+    'block_cta__class' : 'block-cta block-cta--with-image block-cta--height-small block-cta--content-small',
+    'block_cta__image' : '../images/bg-cta.png',
+    'block_cta__content__class' : 'align-left',
+    'block_cta__title' : 'Abaxis Mission',
+    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+    'block_cta__link' : '<a class="btn btn--medium btn--border-red" href="#" title="link">More About Us</a>'
+  }
+]
+%}
+<h2 class="title-demo">Has Image, Height Small, Content Align Left, Width Content Small</h2>
+{% include "blocks/block-call-to-action.twig" %}
+
+{% set block_cta = [
+  {
+    'block_cta__class' : 'block-cta block-cta--with-image block-cta--height-small block-cta--content-medium',
+    'block_cta__image' : '../images/bg-cta.png',
+    'block_cta__content__class' : 'align-left',
+    'block_cta__title' : 'Abaxis Mission',
+    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+    'block_cta__link' : '<a class="btn btn--medium btn--border-red" href="#" title="link">More About Us</a>'
+  }
+]
+%}
+<h2 class="title-demo">Has Image, Height Small, Content Align Left, Width Content Medium</h2>
+{% include "blocks/block-call-to-action.twig" %}
+
+{% set block_cta = [
+  {
+    'block_cta__class' : 'block-cta block-cta--with-image block-cta--height-small block-cta--content-small',
+    'block_cta__image' : '../images/bg-cta-left.png',
+    'block_cta__content__class' : 'align-right',
+    'block_cta__content__inner__class' : 'align-left',
+    'block_cta__title' : 'Abaxis Mission',
+    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+    'block_cta__link' : '<a class="btn btn--medium btn--border-red" href="#" title="link">More About Us</a>'
+  }
+]
+%}
+<h2 class="title-demo">Has Image, Height Small,Content Align Right, Text Align Left, Width Content Small</h2>
+{% include "blocks/block-call-to-action.twig" %}
+
+{% set block_cta = [
+  {
+    'block_cta__class' : 'block-cta block-cta--with-image block-cta--height-small block-cta--content-small',
+    'block_cta__image' : '../images/bg-cta-left.png',
+    'block_cta__content__class' : 'align-right',
+    'block_cta__title' : 'Abaxis Mission',
+    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+    'block_cta__link' : '<a class="btn btn--medium btn--border-red" href="#" title="link">More About Us</a>'
+  }
+]
+%}
+<h2 class="title-demo">Has Image, Height Small, Content Align Right, Width Content Small</h2>
+{% include "blocks/block-call-to-action.twig" %}
+
+{% set block_cta = [
+  {
+    'block_cta__class' : 'block-cta block-cta--with-image block-cta--height-small block-cta--content-small',
+    'block_cta__image' : '../images/bg-cta-left.png',
+    'block_cta__content__class' : 'align-right',
+    'block_cta__content__inner__class' : 'align-center',
+    'block_cta__title' : 'Abaxis Mission',
+    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+    'block_cta__link' : '<a class="btn btn--medium btn--border-red" href="#" title="link">More About Us</a>'
+  }
+]
+%}
+<h2 class="title-demo">Has Image, Height Small, Content Align Right, Text Align Center, Width Content Small</h2>
+{% include "blocks/block-call-to-action.twig" %}
+
+{% set block_cta = [
+  {
+    'block_cta__class' : 'block-cta block-cta--with-image block-cta--light block-cta--height-small block-cta--content-large',
+    'block_cta__content__class' : 'align-center',
+    'block_cta__image' : '../images/work-with-us-banner.jpg',
+    'block_cta__title' : 'Abaxis Mission',
+    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+    'block_cta__link' : '<a class="btn btn--medium btn--bg-blue" href="#" title="link">More About Us</a>'
+  }
+]
+%}
+<h2 class="title-demo">Has Image, Height Small</h2>
+{% include "blocks/block-call-to-action.twig" %}
+
+{% set block_cta = [
+  {
+    'block_cta__class' : 'block-cta block-cta--with-image block-cta--light block-cta--height-medium block-cta--content-large',
+    'block_cta__image' : '../images/work-with-us-banner.jpg',
+    'block_cta__content__class' : 'align-center',
+    'block_cta__title' : 'Abaxis Mission',
+    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+    'block_cta__link' : '<a class="btn btn--medium btn--bg-blue" href="#" title="link">More About Us</a>'
+  }
+]
+%}
+<h2 class="title-demo">Has Image, Height Medium</h2>
+{% include "blocks/block-call-to-action.twig" %}
+
+{% set block_cta = [
+  {
+    'block_cta__class' : 'block-cta block-cta--with-image block-cta--light block-cta--height-large block-cta--content-large',
+    'block_cta__image' : '../images/work-with-us-banner.jpg',
+    'block_cta__content__class' : 'align-center',
+    'block_cta__title' : 'Abaxis Mission',
+    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+    'block_cta__link' : '<a class="btn btn--medium btn--bg-blue" href="#" title="link">More About Us</a>'
+  }
+]
+%}
+<h2 class="title-demo">Has Image, Height Large</h2>
+{% include "blocks/block-call-to-action.twig" %}
