@@ -268,7 +268,7 @@
 }
 
 .device-desktop {
-  width: 1200px;
+  width: 1024px;
 }
 
 
@@ -314,12 +314,4 @@
   font-size: 14px;
   top: -5px;
   position: relative;
-}
-
-.list-icon li {
-  width: 30%;
-  float: left;
-}
-.list-icon {
-  list-style: none;
 }

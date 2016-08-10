@@ -269,3 +269,27 @@
   margin-top: rem(20px);
   text-align: center;
 }
+
+
+.list-icon {
+  list-style: none;
+
+  li {
+    display: flex;
+    float: left;
+    width: 100%;
+    align-items: center;
+
+    @include susy-media(tablet) {
+      width: 33%;
+    }
+
+    @include susy-media(tablet-landscape) {
+      width: 25%;
+    }
+
+    i {
+      min-width: 25px;
+    }
+  }
+}
