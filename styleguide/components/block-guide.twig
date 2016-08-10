@@ -1,27 +1,73 @@
-{% block blockGuide %}
-<div class="block-guide block-guide--color-red block-guide--bg-grey">
-  <div class="container">
-    <div class="block-guide__contents">
-      <div class="block-guide__contents__item">
-        <img src="../../images/images-pages/simple-step1.png" alt="Step 1">
-        <label>Step 1:</label>
-        <h3 class="block-guide__body__title">Add Sample</h3>
-      </div>
-      <div class="block-guide__contents__item">
-        <img src="../../images/images-pages/simple-step2.png" alt="Step 2">
-        <label>Step 2:</label>
-        <h3 class="block-guide__body__title">Insert Disk</h3>
-      </div>
-      <div class="block-guide__contents__item">
-        <img src="../../images/images-pages/simple-step3.png" alt="Step 3">
-        <label>Step 3:</label>
-        <h3 class="block-guide__body__title">Read Results</h3>
-      </div>
-    </div>
-    <div class="block-guide__links">
-      <a href="#" class="btn btn--medium btn--border-blue">IQC WHITEPAPER</a>
-      <a href="#" class="btn btn--medium btn--border-red">DETAILED STEPS</a>
-    </div>
-  </div>
-</div>
-{% endblock %}
+{% set sectionTitle = 'Simple Operation' %}
+{% set sectionDescription = 'With Results You Can Count On' %}
+{% set block_guide = [
+    {
+    'block_guide__image' : 'images-pages/simple-step1.png',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step2.png',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step3.png',
+    'block_guide__title' : 'Insert Sample'
+    }
+  ]
+%}
+
+<h2 class="title-demo">Color Blue</h2>
+{% include "blocks/block-guide.twig" %}
+
+{% set classBlockGuide = 'block-guide--color-red bg-gray-f8' %}
+{% set sectionTitle = '' %}
+{% set sectionDescription = '' %}
+{% set textLinkOne = 'IQC WHITEPAPER' %}
+{% set block_guide = [
+    {
+    'block_guide__image' : 'images-pages/simple-step1.png',
+    'block_guide__label' : 'Step 1:',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step2.png',
+    'block_guide__label' : 'Step 2:',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step3.png',
+    'block_guide__label' : 'Step 3:',
+    'block_guide__title' : 'Insert Sample'
+    }
+  ]
+%}
+
+<h2 class="title-demo">Color Red, Has Label, Has One Button, Background Grey</h2>
+{% include "blocks/block-guide.twig" %}
+
+{% set classBlockGuide = 'block-guide--color-red bg-gray-f8' %}
+{% set sectionTitle = '' %}
+{% set sectionDescription = '' %}
+{% set textLinkOne = 'IQC WHITEPAPER' %}
+{% set textLinkTwo = 'DETAILED STEPS' %}
+{% set block_guide = [
+    {
+    'block_guide__image' : 'images-pages/simple-step1.png',
+    'block_guide__label' : 'Step 1:',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step2.png',
+    'block_guide__label' : 'Step 2:',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step3.png',
+    'block_guide__label' : 'Step 3:',
+    'block_guide__title' : 'Insert Sample'
+    }
+  ]
+%}
+
+<h2 class="title-demo">Color Red, Has Label, Has Two Button, Background Grey</h2>
+{% include "blocks/block-guide.twig" %}
