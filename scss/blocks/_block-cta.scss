@@ -86,8 +86,83 @@
     color: $white;
   }
 
-  // Modifier with body
-  &--content-large {
+  // Modifier content position
+  &--position-left {
+    .block-cta {
+      &__content {
+        text-align: left;
+      }
+    }
+  }
+
+  &--position-center {
+    .block-cta {
+      &__content {
+        text-align: center;
+      }
+    }
+  }
+
+  &--position-right {
+    .block-cta {
+      &__content {
+        text-align: right;
+      }
+    }
+  }
+
+  // Modifier content alignment
+  &--align-left {
+    .block-cta__content {
+      &__inner {
+        text-align: left;
+      }
+    }
+  }
+
+  &--align-center {
+    .block-cta__content {
+      &__inner {
+        text-align: center;
+      }
+    }
+  }
+
+  &--align-right {
+    .block-cta__content {
+      &__inner {
+        text-align: right;
+      }
+    }
+  }
+
+  // Modifier button alignment
+  &--button-left {
+    .block-cta__content {
+      &__link {
+        text-align: left;
+      }
+    }
+  }
+
+  &--button-center {
+    .block-cta__content {
+      &__link {
+        text-align: center;
+      }
+    }
+  }
+
+  &--button-right {
+    .block-cta__content {
+      &__link {
+        text-align: right;
+      }
+    }
+  }
+
+  // Modifier content width
+  &--width-large {
     .block-cta__content {
       &__inner {
         padding: rem(0 10px);
@@ -100,32 +175,7 @@
     }
   }
 
-  &--content-medium {
-    .block-cta__content {
-      &__inner {
-        padding: rem(0 10px);
-
-        @include susy-media(tablet) {
-          width: 65%;
-        }
-      }
-
-      &__title {
-        @include susy-media(tabletOnly) {
-          font-size: rem(35px);
-        }
-      }
-
-      &__body {
-        @include susy-media(tabletOnly) {
-          font-size: rem(15px);
-          margin-bottom: rem(15px);
-        }
-      }
-    }
-  }
-
-  &--content-small {
+  &--width-small {
     .block-cta__content {
       &__inner {
         padding: rem(0 10px);
@@ -156,16 +206,6 @@
 
   // Modifier height.
   &--height-small {
-    @include susy-media(tablet) {
-      height: rem(343px);
-    }
-
-    @include susy-media(desktop) {
-      height: rem(506px);
-    }
-  }
-
-  &--height-medium {
     height: rem(500px);
 
     @include susy-media(desktop) {
@@ -193,46 +233,12 @@
     position: relative;
     overflow: hidden;
 
-    // .block-cta {
-    //   &__content {
-    //     line-height: 1.5;
-    //     padding: rem(0 10px);
-
-    //     @include susy-media(tablet) {
-    //       max-width: rem(640px);
-    //       padding: rem(0 20px);
-    //     }
-
-    //     &__title {
-    //       margin-bottom: rem(7px);
-
-    //       @include susy-media(tablet) {
-    //         margin-bottom: rem(18px);
-    //       }
-    //     }
-
-    //     &__body {
-    //       font-size: rem(15px);
-    //       margin-bottom: rem(3px);
-
-    //       @include susy-media(tablet) {
-    //         font-size: rem(20px);
-    //         margin-bottom: rem(26px);
-    //       }
-
-    //       @include susy-media(desktop) {
-    //         margin-bottom: rem(95px);
-    //       }
-    //     }
-
-    //     .btn {
-    //       @include susy-media(mobileOnly) {
-    //         background-color: transparent;
-    //         border: 1px solid $white;
-    //       }
-    //     }
-    //   }
-    // }
+    .btn {
+      @include susy-media(mobileOnly) {
+        background-color: transparent;
+        border: 1px solid $white;
+      }
+    }
   }
 
   // Modifiers for background
@@ -264,82 +270,6 @@
       background-image: url($image-path + 'cta-hero-darkolivegreen.jpg');
     }
   }
-
-  // // Modifier height.
-  // &--height-small {
-
-  //   @include susy-media(tablet) {
-  //     height: rem(343px);
-  //   }
-
-  //   @include susy-media(desktop) {
-  //     height: rem(506px);
-  //   }
-
-  //   // .block-cta {
-  //   //   &__content {
-  //   //     @include susy-media(tablet) {
-  //   //       max-width: rem(800px);
-  //   //     }
-
-  //   //     &__body {
-  //   //       margin-bottom: rem(3px);
-
-  //   //       @include susy-media(tablet) {
-  //   //         margin-bottom: rem(26px);
-  //   //       }
-
-  //   //       @include susy-media(desktop) {
-  //   //         margin-bottom: rem(44px);
-  //   //       }
-  //   //     }
-  //   //   }
-  //   // }
-  // }
-
-  // &--height-medium {
-  //   height: rem(414px);
-
-  //   @include susy-media(tablet) {
-  //     height: rem(514px);
-  //   }
-
-  //   // .block-cta {
-  //   //   &__content {
-  //   //     @include susy-media(tablet) {
-  //   //       max-width: rem(800px);
-  //   //     }
-
-  //   //     &__body {
-  //   //       @include susy-media(tablet) {
-  //   //         margin-bottom: rem(45px);
-  //   //       }
-  //   //     }
-  //   //   }
-  //   // }
-  // }
-
-  // &--height-large {
-  //   height: rem(414px);
-
-  //   @include susy-media(tablet) {
-  //     height: rem(630px);
-  //   }
-
-  //   // .block-cta {
-  //   //   &__content {
-  //   //     @include susy-media(tablet) {
-  //   //       max-width: rem(800px);
-  //   //     }
-
-  //   //     &__body {
-  //   //       @include susy-media(tablet) {
-  //   //         margin-bottom: rem(45px);
-  //   //       }
-  //   //     }
-  //   //   }
-  //   // }
-  // }
 
   &--corporate {
     padding-bottom: rem(35px);

@@ -18,11 +18,6 @@
   ],
   "list_components":[
     {
-      "id":"ST-10",
-      "name":"call-to-action",
-      "group":"component"
-    },
-    {
       "id":"ST-01",
       "name":"headings",
       "group":"basic",
@@ -42,6 +37,11 @@
     },
     {
       "name":"pager",
+      "group":"component"
+    },
+    {
+      "id":"ST-10",
+      "name":"call-to-action",
       "group":"component"
     },
     {
