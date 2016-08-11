@@ -72,6 +72,10 @@
     {
       "name":"block-contact-info-faq",
       "group":"component"
+    },
+    {
+      "name":"block-counter",
+      "group":"component"
     }
   ]
 }

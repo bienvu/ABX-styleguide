@@ -1,0 +1,42 @@
+.block-counter {
+  overflow: hidden;
+  padding-top: 30px;
+
+  &__item {
+    margin-bottom: rem(50px);
+  }
+
+  &__title {
+    font-size: rem(20px);
+    margin-bottom: rem(15px);
+
+    span {
+      color: $red-light;
+    }
+  }
+
+  &__numbers {
+    font-size: rem(25px);
+    @extend %clearfix;
+
+    span {
+      background-color: $white;
+      float: left;
+      height: rem(45px);
+      line-height: 1.9;
+      margin-right: rem(1px);
+      text-align: center;
+      width: rem(35px);
+
+      &.block-counter__numbers {
+        &--bold {
+          @include gotham-medium;
+        }
+      }
+    }
+
+    .space-right {
+      margin-right: rem(8px);
+    }
+  }
+}
