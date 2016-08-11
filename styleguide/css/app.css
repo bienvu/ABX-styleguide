@@ -182,11 +182,20 @@
 .component--item .component--title {
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ccc;
-  font-family: 'gotham-bold', Helvetica, Arial, sans-serif;
+  font-family: 'gotham-medium', Helvetica, Arial, sans-serif;
 }
 
 .component--demo {
   padding: 15px 0;
+}
+
+.component--demo .block-contact-info {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.component--demo .block-stream  {
+  padding-top: 0;
 }
 
 .component--source--title {

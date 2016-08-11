@@ -27,16 +27,16 @@
       "group":"basic"
     },
     {
+      "name":"icomoon",
+      "group":"helper"
+    },
+    {
       "name":"button",
-      "group":"basic"
+      "group":"component"
     },
     {
       "name":"pager",
-      "group":"basic"
-    },
-    {
-      "name":"icomoon",
-      "group":"helper"
+      "group":"component"
     },
     {
       "name":"slider",
@@ -56,6 +56,10 @@
     },
     {
       "name":"block-guide",
+      "group":"component"
+    },
+    {
+      "name":"block-contact-info",
       "group":"component"
     },
     {

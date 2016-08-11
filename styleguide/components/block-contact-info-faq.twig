@@ -82,10 +82,10 @@
 %}
 
 {% block contactInfoSupport %}
-  <div class="block-contact-info-faq">
+  <div class="grid-two-cols">
     <div class="container">
-      <div class="block-contact-info-faq__content">
-        <div class="block-contact-info-faq__left">
+      <div class="grid-two-cols__content">
+        <div class="grid-two-cols__left">
           {# Block Tasb #}
           {% block tabs %}
             <div class="block-tabs">
@@ -133,7 +133,7 @@
           {% endblock %}
 
         </div>
-        <div class="block-contact-info-faq__right">
+        <div class="grid-two-cols__right">
           {% set ClassBlock = 'block-contact-info--has-border' %}
           {% set contactInfo = [
               {

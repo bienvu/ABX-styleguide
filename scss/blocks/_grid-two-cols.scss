@@ -1,4 +1,4 @@
-.block-contact-info-faq {
+.grid-two-cols {
   overflow: hidden;
   position: relative;
 
@@ -55,7 +55,7 @@
     padding: rem(32px $container-margin 0 $container-margin);
     background-color: $blue-ea;
     margin: 0 rem(-$container-margin);
-    
+
     @include susy-media(tablet) {
       padding: 0 rem($container-margin-medium);
       margin: 0 rem(-$container-margin-medium);
@@ -80,7 +80,7 @@
       padding-left: rem(30px);
       padding-right: rem(30px);
     }
-    
+
     @include susy-media(desktop) {
       padding-right: rem(107px);
       margin-bottom: 0;
@@ -116,7 +116,7 @@
     }
 
     &__wrap {
-      
+
         >.block-contact-info__item {
           @include susy-media(tabletOnly) {
             @include span(4 of 8);
@@ -141,23 +141,6 @@
 
     &__body {
       line-height: rem(20px);
-    }
-  }
-
-  .block-faqs {
-    &__item {
-      &__title {
-        cursor: pointer;
-      }
-
-      &__body {
-        display: none;
-        padding-left: rem(18px);
-
-        &.is-active {
-          display: block;
-        }
-      }
     }
   }
 }

@@ -264,10 +264,15 @@
 
 // Title demo
 .title-demo {
+  font-family: 'gotham-bold';
   font-size: rem(20px);
   margin-bottom: rem(5px);
-  margin-top: rem(20px);
+  margin-top: rem(40px);
   text-align: center;
+}
+
+.margin-top-none {
+  margin-top: 0;
 }
 
 

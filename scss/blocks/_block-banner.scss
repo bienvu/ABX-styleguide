@@ -1,7 +1,7 @@
 // Block banner.
-
 .block-banner {
   align-items: center;
+  color: $white;
   display: flex;
   height: rem(400px);
   justify-content: center;
@@ -20,38 +20,16 @@
   }
 
   // Banner text color modifier.
-  &--dark {
-    background-color: $gray-c3;
-    color: $black;
-
-    .banner-caption__description {
-      &:before {
-        border-top: 1px solid $black;
-      }
-    }
-  }
-
-  &--light {
-    color: $white;
-  }
-
-  &--light-overlay {
-    @include gradient-overlay($white, .3);
-  }
-
   &--dark-overlay {
     @include gradient-overlay($black, .3);
   }
+
   // Banner height modifiers.
   &--height-small {
     height: rem(120px);
 
     @include susy-media(tablet) {
-      height: rem(272px);
-    }
-
-    @include susy-media(desktop) {
-      height: rem(271px);
+      height: rem(275px);
     }
   }
 
@@ -59,29 +37,7 @@
     height: rem(183px);
 
     @include susy-media(tablet) {
-      height: rem(360px);
-    }
-
-    @include susy-media(desktop) {
-      height: rem(560px);
-    }
-  }
-
-  &--has-button {
-    @include susy-media(mobileOnly) {
-      height: rem(250px);
-    }
-
-    .banner-caption {
-      &__description {
-        padding-left: rem(35px);
-        padding-right: rem(35px);
-
-        @include susy-media(tablet) {
-          padding-left: 0;
-          padding-right: 0;
-        }
-      }
+      height: rem(350px);
     }
   }
 
@@ -93,30 +49,20 @@
     }
 
     @include susy-media(desktop) {
-      height: rem(570px);
+      height: rem(575px);
     }
   }
 
-  &--sub-product {
-    @include susy-media(desktop) {
-      height: rem(520px);
-
-      .banner-caption {
-        &__description {
-          padding-left: rem(25px);
-          padding-right: rem(25px);
-        }
-      }
+  &--has-button {
+    @include susy-media(mobileOnly) {
+      height: rem(250px);
     }
-  }
 
-  &--supporting-service {
-    @include susy-media(desktop) {
-      .banner-caption {
-        max-width: span(8 of $susy-desktop);
-
-        &__description {
-          @include pad(1 of 8 narrow);
+    .banner-caption {
+      &__description {
+        @include susy-media(mobileOnly) {
+          padding-left: rem(35px);
+          padding-right: rem(35px);
         }
       }
     }

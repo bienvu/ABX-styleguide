@@ -1,8 +1,12 @@
 {% block blockGuide %}
 <div class="block-guide {{classBlockGuide}}">
   <div class="container">
-    <h2 class="section-title">{{ sectionTitle }}</h2>
-    <h3 class="section-description">{{ sectionDescription }}</h3>
+    {% if sectionTitle is not empty %}
+      <h2 class="section-title">{{ sectionTitle }}</h2>
+    {% endif %}
+    {% if sectionDescription is not empty %}
+      <h3 class="section-description">{{ sectionDescription }}</h3>
+    {% endif %}
     <div class="block-guide__contents">
       {% for item in block_guide %}
         <div class="block-guide__contents__item">
@@ -15,7 +19,7 @@
       {% endfor %}
     </div>
     {% if textLinkOne or textLinkTwo is not empty %}
-    <div class="block-guide__links"> 
+    <div class="block-guide__links">
       {% if textLinkOne is not empty %}
       <a href="#" class="btn btn--medium btn--border-blue">{{ textLinkOne }}</a>
       {% endif %}
