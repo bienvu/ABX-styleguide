@@ -298,3 +298,21 @@
     }
   }
 }
+// Text align modifiers
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: center;
+  @include susy-media(tablet) {
+    text-align: left;
+  }
+}
+
+.align-right {
+  text-align: center;
+  @include susy-media(tablet) {
+    text-align: right;
+  }
+}
