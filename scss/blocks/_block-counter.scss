@@ -1,42 +1,42 @@
 .block-counter {
-	&__item {
-		margin-bottom: rem(50px);
-	}
+  overflow: hidden;
+  padding-top: 30px;
 
-	&__title {
-		font-size: rem(20px);
-		margin-bottom: rem(15px);
+  &__item {
+    margin-bottom: rem(50px);
+  }
 
-		span {
-			color: $red-light;
-		}
-	}
+  &__title {
+    font-size: rem(20px);
+    margin-bottom: rem(15px);
 
-	&__numbers {
-		font-size: rem(25px);
-		@extend %clearfix;
+    span {
+      color: $red-light;
+    }
+  }
 
-		span {
-			background-color: $white;
-			width: rem(35px);
-			height: rem(45px);
-			display: inline-block;
-			line-height: 1.9;
-			float: left;
-			text-align: center;
-			margin-right: rem(1px);
+  &__numbers {
+    font-size: rem(25px);
+    @extend %clearfix;
 
-			&.block-counter__numbers {
-				&--space {
-					background-color: transparent;
-					width: rem(8px);
-					height: rem(8px);
-				}
+    span {
+      background-color: $white;
+      float: left;
+      height: rem(45px);
+      line-height: 1.9;
+      margin-right: rem(1px);
+      text-align: center;
+      width: rem(35px);
 
-				&--bold {
-					@include gotham-medium;
-				}
-			}
-		}
-	}
+      &.block-counter__numbers {
+        &--bold {
+          @include gotham-medium;
+        }
+      }
+    }
+
+    .space-right {
+      margin-right: rem(8px);
+    }
+  }
 }
