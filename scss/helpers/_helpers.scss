@@ -111,6 +111,16 @@
   }
 }
 
+.margin-large-bottom {
+  @include susy-media(desktop) {
+    margin-bottom: rem(50px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(90px);
+  }
+}
+
 // Paddings
 %padding-one-column,
 .padding-one-column {
@@ -315,4 +325,16 @@
   @include susy-media(tablet) {
     text-align: right;
   }
+}
+
+// Font weight
+.bold {
+  @include gotham-bold;
+}
+
+// Description
+.description-medium {
+  max-width: rem(800px);
+  margin-left: auto;
+  margin-right: auto;
 }
