@@ -68,6 +68,12 @@ $susy-desktop: (
 
 // Pick specific breakpoint.
 $susy-media: (
+  // max-width: 479px
+  mobiletinyOnly: (
+    media: screen,
+    max-width: em($mobile-landscape - 1) * 1em,
+  ),
+
   // max-width: 769px
   mobileOnly: (
     media: screen,
@@ -111,6 +117,14 @@ $susy-media: (
 
   // min-width: 1440px
   desktop-superwide: em($desktop-superwide) * 1em,
+
+  // min-width: 1440px
+  desktop-superwide-large-only: (
+    media: screen,
+    min-width: em($desktop-superwide) * 1em,
+    max-width: em($desktop-superwide-large) * 1em,
+  ),
+
 );
 
 .container {

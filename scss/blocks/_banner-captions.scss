@@ -18,6 +18,10 @@
     margin-bottom: 0;
 
     @include susy-media(tablet) {
+      font-size: rem(35px);
+    }
+
+    @include susy-media(desktop) {
       font-size: rem(50px);
     }
   }

@@ -24,6 +24,10 @@
     z-index: 3;
 
     @include susy-media(tablet) {
+      bottom: rem(10px);
+    }
+
+    @include susy-media(desktop) {
       bottom: rem(41px);
     }
   }

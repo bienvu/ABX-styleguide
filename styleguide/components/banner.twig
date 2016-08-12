@@ -1,19 +1,21 @@
 {# Banner height small #}
 {% set block_banner = [
     {
-      'block_banner__class' : 'block-banner block-banner--height-small',
-      'block_banner__image' : '../images/images-pages/sub-page-hero-news.jpg',
+      'block_banner__class' : 'block-banner block-banner--height-small block-banner--dark-overlay',
+      'block_banner__image' : '../images/images-pages/pet.jpg',
       'block_banner__title' : 'PICCOLO XPRESS'
     }
   ]
 %}
-<h2 class="title-demo margin-top-none">Height small</h2>
+<h2 class="section-title margin-top-none">Height small</h2>
+<h2 class="section-description">How to use: Only show title, Height: 275px and Image: 2000x360px</h2>
+<h2 class="section-description">Class: block-banner--height-small</h2>
 {% include "blocks/block-banner.twig" %}
 
 {% set block_banner = [
     {
-      'block_banner__class' : 'block-banner block-banner--height-medium',
-      'block_banner__image' : '../images/images-pages/banner-supporting-services.jpg',
+      'block_banner__class' : 'block-banner block-banner--height-medium block-banner--dark-overlay',
+      'block_banner__image' : '../images/images-pages/pet2.jpg',
       'block_banner__title' : 'PICCOLO XPRESS',
       'block_banner__description' : 'On-site, lab-accurate, CLA waived blood chemistry results in minutes'
     }
@@ -24,37 +26,13 @@
 
 {% set block_banner = [
     {
-      'block_banner__class' : 'block-banner block-banner--height-big',
-      'block_banner__image' : '../images/images-pages/banner-supporting-services.jpg',
-      'block_banner__title' : 'PANNELS TEST MENU',
-      'block_banner__description' : 'Possibly one of agreatest</br> inventions of our time',
-    }
-  ]
-%}
-<h2 class="title-demo">Height Big</h2>
-{% include "blocks/block-banner.twig" %}
-
-{% set block_banner = [
-    {
-      'block_banner__class' : 'block-banner block-banner--height-medium block-banner--has-button',
-      'block_banner__image' : '../images/images-pages/banner-supporting-services.jpg',
+      'block_banner__class' : 'block-banner block-banner--height-big block-banner--has-button block-banner--dark-overlay',
+      'block_banner__image' : '../images/images-pages/pet3.jpg',
       'block_banner__title' : 'PANNELS TEST MENU',
       'block_banner__description' : 'Possibly one of agreatest</br> inventions of our time',
       'block_banner__link' : 'CTA BUTTON'
     }
   ]
 %}
-<h2 class="title-demo">Has Button</h2>
-{% include "blocks/block-banner.twig" %}
-
-{% set block_banner = [
-    {
-      'block_banner__class' : 'block-banner block-banner--height-medium block-banner--dark-overlay',
-      'block_banner__image' : '../images/images-pages/banner-supporting-services.jpg',
-      'block_banner__title' : 'PANNELS TEST MENU',
-      'block_banner__description' : 'Possibly one of agreatest</br> inventions of our time'
-    }
-  ]
-%}
-<h2 class="title-demo">Dark overlay</h2>
+<h2 class="title-demo">Height Big</h2>
 {% include "blocks/block-banner.twig" %}

@@ -18,7 +18,6 @@
   ],
   "list_components":[
     {
-      "id":"ST-01",
       "name":"headings",
       "group":"basic",
       "hidecode":true
@@ -40,12 +39,6 @@
       "group":"component"
     },
     {
-      "id":"ST-10",
-      "name":"call-to-action",
-      "group":"component"
-    },
-    {
-      "id":"ST-13",
       "name":"slider",
       "group":"component"
     },
@@ -54,7 +47,11 @@
       "group":"component"
     },
     {
-      "name":"grid-slide",
+      "name":"grid-slider",
+      "group":"component"
+    },
+    {
+      "name":"call-to-action",
       "group":"component"
     },
     {

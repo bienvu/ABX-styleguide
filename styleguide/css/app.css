@@ -198,6 +198,12 @@
   padding-top: 0;
 }
 
+.component--demo .pager {
+  border: 0 none;
+  margin: 20px 0;
+  padding: 0;
+}
+
 .component--source--title {
   background: #6CE26C none repeat scroll 0 0;
   padding: 5px 20px;

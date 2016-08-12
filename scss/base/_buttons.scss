@@ -9,6 +9,9 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  padding: rem(10px 25px);
+  border-color: $blue-light;
+  color: $abbey;
 
   @include susy-media(tablet) {
     font-size: rem(13px);
@@ -16,6 +19,7 @@
 
   &:hover {
     cursor: pointer;
+    color: darken($abbey, 5%);
   }
 
   // Dimensions modifiers.
@@ -53,6 +57,7 @@
   // Colors modifiers.
   &--bg-red {
     background-color: $red-light;
+    border: 0;
     color: $white;
 
     &:hover,
@@ -64,6 +69,7 @@
 
   &--bg-blue {
     background-color: $blue;
+    border: 0;
     color: $white;
 
     &:hover,
@@ -75,6 +81,7 @@
 
   &--bg-blue-25 {
     background-color: $blue-25;
+    border: 0;
     color: $white;
 
     &:hover,
@@ -86,6 +93,7 @@
 
   &--bg-green {
     background-color: $green-77;
+    border: 0;
     color: $white;
 
     &:hover,
@@ -97,6 +105,7 @@
 
   &--bg-light-blue {
     background-color: $blue-light;
+    border: 0;
     color: $white;
 
     &:hover,
@@ -110,6 +119,10 @@
   &--border-blue {
     color: $abbey;
     border-color: $blue-light;
+
+    &:hover {
+      color: $blue;
+    }
   }
 
   // Borders red modifiers

@@ -16,6 +16,11 @@
 
     img {
       @extend %img-cover;
+      width: 100%;
+      height: auto;
+      max-width: inherit;
+      min-height: inherit;
+      min-width: inherit;
     }
   }
 
@@ -26,43 +31,81 @@
 
   // Banner height modifiers.
   &--height-small {
-    height: rem(120px);
+    height: rem(115px);
 
     @include susy-media(tablet) {
+      height: rem(200px);
+    }
+
+    @include susy-media(tablet-landscape) {
       height: rem(275px);
+    }
+
+    .block-banner {
+      &__image {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
     }
   }
 
   &--height-medium {
-    height: rem(183px);
+    height: rem(175px);
 
     @include susy-media(tablet) {
+      height: rem(285px);
+    }
+
+    @include susy-media(tablet-landscape) {
       height: rem(350px);
+    }
+
+    .block-banner {
+      &__image {
+        img {
+          @include susy-media(mobiletinyOnly) {
+            height: 100%;
+            width: auto;
+          }
+        }
+      }
     }
   }
 
   &--height-big {
-    height: rem(183px);
+    height: rem(250px);
 
     @include susy-media(tablet) {
-      height: rem(366px);
+      height: rem(285px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      height: rem(355px);
     }
 
     @include susy-media(desktop) {
       height: rem(575px);
     }
-  }
 
-  &--has-button {
-    @include susy-media(mobileOnly) {
-      height: rem(250px);
-    }
+    .block-banner {
+      &__image {
+        img {
+          @include susy-media(mobileOnly) {
+            height: 115%;
+            width: auto;
+          }
 
-    .banner-caption {
-      &__description {
-        @include susy-media(mobileOnly) {
-          padding-left: rem(35px);
-          padding-right: rem(35px);
+          @include susy-media(desktop) {
+            width: auto;
+            height: 100%;
+          }
+
+          @include susy-media(desktop-superwide) {
+            width: 110%;
+            height: auto;
+          }
         }
       }
     }
