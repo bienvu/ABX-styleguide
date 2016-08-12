@@ -197,6 +197,11 @@
       &__inner {
         padding: rem(0 10px);
 
+        @include susy-media(tablet) {
+          max-width: 85%;
+          padding: 0;
+        }
+
         @include susy-media(desktop) {
           max-width: 69%;
           padding: 0;
