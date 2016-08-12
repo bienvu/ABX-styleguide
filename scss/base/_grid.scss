@@ -83,6 +83,19 @@ $susy-media: (
   // min-width: 480px
   mobileLandscape: em($mobile-landscape) * 1em,
 
+   // max-width: 480px
+  mobileTiny: (
+    media: screen,
+    max-width: em($mobile-landscape - 1) * 1em,
+  ),
+
+  //min-width:480px and max-width: 768px
+  mobileLandscapeOnly: (
+    media: screen,
+    min-width: em($mobile-landscape) * 1em,
+    max-width: em($tablet - 1) * 1em,
+  ),
+
   // min-width: 768px and max-width: 960px
   tabletSmallOnly: (
     media: screen,
