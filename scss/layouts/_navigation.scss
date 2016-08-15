@@ -417,6 +417,7 @@ $height-navigation-dropdown: rem(520px);
     display: block;
     padding: rem(13px 57px 11px);
     text-transform: capitalize;
+    transition: .3s;
 
     &:focus,
     &:hover {

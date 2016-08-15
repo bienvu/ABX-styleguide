@@ -3,23 +3,25 @@
   @include gotham-bold;
   background-color: transparent;
   border: 1px solid transparent;
+  border-color: $blue-light;
+  color: $abbey;
   display: inline-block;
   font-size: rem(15px);
   margin-bottom: 10px;
+  padding: rem(10px 25px);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  padding: rem(10px 25px);
-  border-color: $blue-light;
-  color: $abbey;
+  transition: .3s;
 
   @include susy-media(tablet) {
     font-size: rem(13px);
   }
 
   &:hover {
-    cursor: pointer;
     color: darken($abbey, 5%);
+    cursor: pointer;
+    transition: .3s;
   }
 
   // Dimensions modifiers.

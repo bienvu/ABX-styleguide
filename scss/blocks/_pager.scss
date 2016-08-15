@@ -20,7 +20,7 @@
     @include gotham-medium;
     color: $gray;
     cursor: pointer;
-
+    transition: .3s;
 
     @include susy-media(tablet) {
       align-items: center;
@@ -45,6 +45,7 @@
 
     &:hover {
       color: $blue;
+      transition: .3s;
 
       @include susy-media(tablet) {
         background-color: $blue-light;

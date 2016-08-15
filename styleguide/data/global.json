@@ -18,6 +18,11 @@
   ],
   "list_components":[
     {
+      "name":"header",
+      "group":"component",
+      "hidecode":true
+    },
+    {
       "name":"headings",
       "group":"basic",
       "hidecode":true
