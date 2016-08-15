@@ -4,18 +4,6 @@
   @extend %clearfix;
   list-style: none;
 
-  @include susy-media(mobileOnly) {
-    padding: rem(34px 3px 5px 3px);
-  }
-
-  @include susy-media(tablet) {
-    padding-top: rem(25px);
-  }
-
-  @include susy-media(desktop) {
-    padding-top: rem(30px);
-  }
-
   &__item {
     float: left;
     margin-bottom: rem(20px);

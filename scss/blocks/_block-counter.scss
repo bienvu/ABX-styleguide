@@ -1,9 +1,8 @@
 .block-counter {
   overflow: hidden;
-  padding-top: 30px;
 
   &__item {
-    margin-bottom: rem(50px);
+    margin-bottom: rem(40px);
   }
 
   &__title {
@@ -20,13 +19,14 @@
     @extend %clearfix;
 
     span {
-      background-color: $white;
+      background-color: $gray-f5;
       float: left;
       height: rem(45px);
       line-height: 1.9;
       margin-right: rem(1px);
       text-align: center;
-      width: rem(35px);
+      width: rem(32px);
+      margin-bottom: rem(1px);
 
       &.block-counter__numbers {
         &--bold {

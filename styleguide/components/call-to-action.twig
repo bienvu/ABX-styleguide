@@ -7,7 +7,9 @@
   }
 ]
 %}
-<h2 class="title-demo">No Image</h2>
+<h2 class="section-title">No Image</h2>
+<h2 class="section-description margin-bottom">How to use: Don't need image</h2>
+<h2 class="section-description">Class: block-cta--width-large block-cta--position-center</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -20,7 +22,9 @@
   }
 ]
 %}
-<h2 class="title-demo">Has Image, Height Small</h2>
+<h2 class="section-title">Has Image, Height Small</h2>
+<h2 class="section-description margin-bottom">Height small: 510px and Image: 1764x630px</h2>
+<h2 class="section-description">Class: block-cta--with-image block-cta--light block-cta--height-small block-cta--width-large block-cta--position-center</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -33,7 +37,9 @@
   }
 ]
 %}
-<h2 class="title-demo">Has Image, Height Large</h2>
+<h2 class="section-title">Has Image, Height Large</h2>
+<h2 class="section-description margin-bottom">Height Large: 630px and Image: 1764x630px</h2>
+<h2 class="section-description">Class: block-cta--with-image block-cta--light block-cta--height-large block-cta--width-large block-cta--position-center</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -46,38 +52,14 @@
   }
 ]
 %}
-<h2 class="title-demo">Width Content Small</h2>
+<h2 class="section-title">Width Content Small, Position Left</h2>
+<h2 class="section-description margin-bottom">Width Content Small: 50% and Image: 1764x630px</h2>
+<h2 class="section-description margin-bottom">Class: block-cta--with-image block-cta--height-small block-cta--width-small block-cta--position-left</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
   {
-    'block_cta__class' : 'block-cta block-cta--with-image block-cta--height-small block-cta--width-large block-cta--position-left',
-    'block_cta__image' : '../images/bg-cta.png',
-    'block_cta__title' : 'Abaxis Mission',
-    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
-    'block_cta__link' : '<a class="btn btn--medium btn--border-red" href="#" title="link">More About Us</a>'
-  }
-]
-%}
-<h2 class="title-demo">Width Content Large</h2>
-{% include "blocks/block-call-to-action.twig" %}
-
-{% set block_cta = [
-  {
-    'block_cta__class' : 'block-cta block-cta--with-image block-cta--height-small block-cta--width-small block-cta--position-left',
-    'block_cta__image' : '../images/bg-cta.png',
-    'block_cta__title' : 'Abaxis Mission',
-    'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
-    'block_cta__link' : '<a class="btn btn--medium btn--border-red" href="#" title="link">More About Us</a>'
-  }
-]
-%}
-<h2 class="title-demo">Content Left</h2>
-{% include "blocks/block-call-to-action.twig" %}
-
-{% set block_cta = [
-  {
-    'block_cta__class' : 'block-cta block-cta--with-image block-cta--height-small block-cta--width-small block-cta--position-right',
+    'block_cta__class' : 'block-cta block-cta--with-image block-cta--height-small block-cta--width-large block-cta--position-right',
     'block_cta__image' : '../images/bg-cta-left.png',
     'block_cta__title' : 'Abaxis Mission',
     'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
@@ -85,7 +67,9 @@
   }
 ]
 %}
-<h2 class="title-demo">Content Right</h2>
+<h2 class="section-title">Width Content Large, Position Right</h2>
+<h2 class="section-description margin-bottom">Width Content Large: 69% and Image: 1764x630px</h2>
+<h2 class="section-description margin-bottom">Class: block-cta--with-image block-cta--height-small block-cta--width-large block-cta--position-left</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -98,7 +82,9 @@
   }
 ]
 %}
-<h2 class="title-demo">Content Center</h2>
+<h2 class="section-title">Width Content Small, Position Center</h2>
+<h2 class="section-description margin-bottom">Width Content Large: 50% and Image: 1764x630px</h2>
+<h2 class="section-description ">Class: block-cta--with-image block-cta--height-small block-cta--width-large block-cta--position-center block-cta--light</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -111,7 +97,8 @@
   }
 ]
 %}
-<h2 class="title-demo">Content Left, Text Align Right</h2>
+<h2 class="section-title">Content Left, Text Align Right</h2>
+<h2 class="section-description margin-bottom">Class: block-cta--with-image block-cta--height-small block-cta--width-small block-cta--position-left block-cta--align-right</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -124,7 +111,8 @@
   }
 ]
 %}
-<h2 class="title-demo">Content Right, Text Align Left</h2>
+<h2 class="section-title">Content Right, Text Align Left</h2>
+<h2 class="section-description margin-bottom">Class: block-cta--with-image block-cta--height-small block-cta--width-small block-cta--position-right block-cta--align-left</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -137,7 +125,8 @@
   }
 ]
 %}
-<h2 class="title-demo">Content Right, Text Align Center</h2>
+<h2 class="section-title">Content Right, Text Align Center</h2>
+<h2 class="section-description margin-bottom">Class: block-cta--with-image block-cta--height-small block-cta--width-small block-cta--position-right block-cta--align-center</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -150,7 +139,8 @@
   }
 ]
 %}
-<h2 class="title-demo">Button Right</h2>
+<h2 class="section-title">Button Right</h2>
+<h2 class="section-description margin-bottom">Class: block-cta--button-right</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -163,7 +153,8 @@
   }
 ]
 %}
-<h2 class="title-demo">Button Center</h2>
+<h2 class="section-title">Button Center</h2>
+<h2 class="section-description margin-bottom">Class: block-cta--button-center</h2>
 {% include "blocks/block-call-to-action.twig" %}
 
 {% set block_cta = [
@@ -176,5 +167,6 @@
   }
 ]
 %}
-<h2 class="title-demo">Button Left</h2>
+<h2 class="section-title">Button Left</h2>
+<h2 class="section-description margin-bottom">Class: block-cta--button-left</h2>
 {% include "blocks/block-call-to-action.twig" %}

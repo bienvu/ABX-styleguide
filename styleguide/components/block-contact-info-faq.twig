@@ -49,6 +49,72 @@
 ]
 %}
 
+{% set Specifications = [
+  {
+    'Specifications__title' : 'Analyzer Weight',
+    'Specifications__body' : '<p>5.1 kg (11.2 lbs)</p>',
+    'Specifications__class__body' : 'is-active',
+    'Specifications__class__title' : 'is-active',
+  },
+  {
+    'Specifications__title' : 'Power Adapter Weight       ',
+    'Specifications__body' : '<p>0.7 kg (1.6 lbs)</p>',
+  },
+  {
+    'Specifications__title' : 'Power Requirements',
+    'Specifications__body' : '<p>100-240 volts AC; 50-60 Hz; or 15 volts DC, 5.0A</p>',
+  },
+  {
+    'Specifications__title' : 'Sample Size ',
+    'Specifications__body' : '<p>0.1cc (100 µl)</p>',
+  },
+  {
+    'Specifications__title' : 'Sample Type ',
+    'Specifications__body' : '<p>Lithium heparin, whole blood, serum or plasma</p>',
+  },
+  {
+    'Specifications__title' : 'Test Time',
+    'Specifications__body' : '<p>Approximately 12 minutes</p>',
+  },
+  {
+    'Specifications__title' : 'Quality Control Features        ',
+    'Specifications__body' : '<p>Built-in intelligent Quality Control (iQC®) system</p>',
+  }
+  ,
+  {
+    'Specifications__title' : 'Communication',
+    'Specifications__body' : '<p>Bi-directional input/output</p>',
+  }
+  ,
+  {
+    'Specifications__title' : 'Consumables        ',
+    'Specifications__body' : '<p>8-cm diameter, single-use, self-contained plastic chemistry reagent discs. Each disc contains all reagents needed to perform a panel of tests on a single sample</p>',
+  }
+  ,
+  {
+    'Specifications__title' : 'Data Input Display        ',
+    'Specifications__body' : '<p>10-digit numeric –VGA color touchscreen</p>',
+  }
+  ,
+  {
+    'Specifications__title' : 'Printer',
+    'Specifications__body' : '<p>Built in thermal printer with adhesive backed paper
+External Printer/LIS/EMR capable</p>',
+  }
+  ,
+  {
+    'Specifications__title' : 'Memory Capacity        ',
+    'Specifications__body' : '<p>Up to 5000 patient and quality control results</p>',
+  }
+  ,
+  {
+    'Specifications__title' : 'Mode of Operation        ',
+    'Specifications__body' : '<p>Continuous</p>',
+  }
+]
+%}
+
+
 {% block contactInfoSupport %}
   <div class="grid-two-cols">
     <div class="container">
@@ -60,15 +126,13 @@
               <div class="container">
                 <div class="block-tabs__inner-wrapper">
                   <ul class="tabs-header js-tabs hidden-on-mobile">
-                    <li><a href="#" class="is-active">FAQ</a></li>
-                    <li><a href="#">Drivers</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="#" class="is-active">FAQs</a></li>
+                    <li><a href="#">Specifications</a></li>
                   </ul>
                   <div class="form-type-select hidden-on-tablet">
                     <select class="js-select">
-                      <option value="FAQ" selected="selected">FAQ</option>
-                      <option value="Drivers">Drivers</option>
-                      <option value="Support">Support</option>
+                      <option value="FAQ" selected="selected">FAQs</option>
+                      <option value="Specifications">Specifications</option>
                     </select>
                   </div>
                   <div class="block-tabs__content js-tabs__content">
@@ -80,19 +144,13 @@
                         </div>
                       {% endfor %}
                     </div>
-                    <div class="block-drivers js-tabs__content__item">
-                      <p><a class="btn btn--medium btn--bg-blue" href="#" title="Download">Download Latest PC Driver</a></p>
-                      <p><a class="btn btn--medium btn--bg-blue" href="#" title="Download">Download Latest Max Driver</a></p>
-                      <p><a class="btn btn--medium btn--bg-blue" href="#" title="Download">Download Latest Linux Driver</a></p>
-                    </div>
-                    <div class="block-support js-tabs__content__item">
-                      <h2 class="title">Support</h2>
-                      <span >Need Help with your VetScan VS2?</span>
-                      <ul>
-                        <li><a href="#">Installation Guide</a></li>
-                        <li class="icon ">1-800-822-2947</li>
-                        <li><a href="#">vetsupport@abaxis.com</a></li>
-                      </ul>
+                    <div class="block-faqs js-tabs__content__item">
+                      {% for item in Specifications %}
+                        <div class="block-faqs__item">
+                          <h2 class="block-faqs__item__title {{item.Specifications__class__title}}">{{item.Specifications__title}}</h2>
+                          <div class="block-faqs__item__body {{item.Specifications__class__body}}">{{item.Specifications__body}}</div>
+                        </div>
+                      {% endfor %}
                     </div>
                   </div>
                 </div>
