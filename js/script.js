@@ -119,21 +119,14 @@
   $('.js-tabs li').on('click', jsTabs);
 
   // Config faq
-  var jsTabsFaq = function(e) {
+  var jsToggleActive = function(e) {
     e.preventDefault();
 
-    var $this = $(this);
-        $tab_index = $this.index();
-        $content_item = $('.block-faqs__item > div');
-        $js_tabs = $('.block-faqs__item h2');
-
-      $js_tabs.removeClass('is-active');
-      $this.children().addClass('is-active');
-      $content_item.removeClass('is-active');
-      $content_item.eq( $tab_index ).addClass('is-active');
+    $(this).toggleClass('is-active');
   };
 
-  $('.block-faqs__item').on('click', jsTabsFaq);
+  $('.block-faqs__item').on('click', jsToggleActive);
+  $('.footer-top__item').on('click', jsToggleActive);
 
   // Config select tabs.
   var jsSelect = function(e) {

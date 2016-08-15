@@ -122,6 +122,10 @@
     .block-cta {
       &__content {
         text-align: left;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -138,6 +142,10 @@
     .block-cta {
       &__content {
         text-align: right;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -147,6 +155,10 @@
     .block-cta__content {
       &__inner {
         text-align: left;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -163,6 +175,10 @@
     .block-cta__content {
       &__inner {
         text-align: right;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -172,6 +188,10 @@
     .block-cta__content {
       &__link {
         text-align: left;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -188,6 +208,10 @@
     .block-cta__content {
       &__link {
         text-align: right;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -200,12 +224,24 @@
 
         @include susy-media(tablet) {
           max-width: 85%;
-          padding: 0;
         }
 
         @include susy-media(desktop) {
           max-width: 69%;
           padding: 0;
+        }
+      }
+
+      &__title {
+        @include susy-media(tabletSmallOnly) {
+          font-size: rem(35px);
+        }
+      }
+
+      &__body {
+        @include susy-media(tabletSmallOnly) {
+          font-size: rem(15px);
+          margin-bottom: rem(15px);
         }
       }
     }
@@ -251,13 +287,6 @@
     padding: rem(24px 0 34px 0);
     position: relative;
     overflow: hidden;
-
-    .btn {
-      @include susy-media(mobileOnly) {
-        background-color: transparent;
-        border: 1px solid $white;
-      }
-    }
   }
 
   // Modifiers for background

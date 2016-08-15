@@ -4,8 +4,6 @@
     'FAQs__title' : 'Can the analyzer be connected to an external computer, printer, LIS or EMR?',
     'FAQs__body' : '<p>The Piccolo Xpress has 5 USB ports located on the back of the analyzer. These USB ports are bi-directional and can be connected to peripherals like a printer, keyboard, barcode scanner, computer or EMR/LIS system. Available data formats are ASCII, ASTM and XML. Data parsing and translation may be required to work with your system. Contact your IT department, systems provider or Abaxis Technical Service at 1-800-822-2947 for assistance.</br>
     Existing customers can also download Abaxis Data Manager for free by clicking here. Data Manager is a free, unsupported utility that connects your Piccolo to a 32-bit Windows computer and formats the Piccolo results into a PDF and XML file. Many practices have found these files useful as an interim solution to full connectivity.</p>',
-    'FAQs__class__body' : 'is-active',
-    'FAQs__class__title' : 'is-active',
   },
   {
     'FAQs__title' : 'What are the power requirements needed to operate the analyzer?',
@@ -138,17 +136,17 @@ External Printer/LIS/EMR capable</p>',
                   <div class="block-tabs__content js-tabs__content">
                     <div class="block-faqs js-tabs__content__item is-active">
                       {% for item in FAQs %}
-                        <div class="block-faqs__item">
-                          <h2 class="block-faqs__item__title {{item.FAQs__class__title}}">{{item.FAQs__title}}</h2>
-                          <div class="block-faqs__item__body {{item.FAQs__class__body}}">{{item.FAQs__body}}</div>
+                        <div class="block-faqs__item {% if loop.index == 1 %} is-active {% endif %}">
+                          <h2 class="block-faqs__item__title">{{item.FAQs__title}}</h2>
+                          <div class="block-faqs__item__body">{{item.FAQs__body}}</div>
                         </div>
                       {% endfor %}
                     </div>
                     <div class="block-faqs js-tabs__content__item">
                       {% for item in Specifications %}
-                        <div class="block-faqs__item">
-                          <h2 class="block-faqs__item__title {{item.Specifications__class__title}}">{{item.Specifications__title}}</h2>
-                          <div class="block-faqs__item__body {{item.Specifications__class__body}}">{{item.Specifications__body}}</div>
+                        <div class="block-faqs__item {% if loop.index == 1 %} is-active {% endif %}">
+                          <h2 class="block-faqs__item__title">{{item.Specifications__title}}</h2>
+                          <div class="block-faqs__item__body">{{item.Specifications__body}}</div>
                         </div>
                       {% endfor %}
                     </div>

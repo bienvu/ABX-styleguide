@@ -53,13 +53,8 @@
     }
 
     &__body {
-      display: none;
       line-height: rem(18px);
       padding-left: rem(18px);
-
-      &.is-active {
-        display: block;
-      }
 
       @include susy-media(tablet) {
         line-height: rem(25px);

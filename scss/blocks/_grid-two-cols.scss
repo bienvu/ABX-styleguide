@@ -141,4 +141,20 @@
       line-height: rem(20px);
     }
   }
+
+  .block-faqs {
+    &__item {
+      &__body {
+        display: none;
+      }
+      
+      &.is-active {
+        .block-faqs__item {
+          &__body {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }

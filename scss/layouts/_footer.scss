@@ -8,13 +8,14 @@
 .footer-top {
   background-color: $blue-ea;
   color: $base-color;
+  padding: rem(30px 0 15px);
 
   @include susy-media(tablet) {
     padding-top: rem(65px);
   }
 
   @include susy-media(tablet-landscape) {
-    padding: rem(65px 16px 0 55px);
+    padding: rem(65px 55px 0 55px);
   }
 
   @include susy-media(desktop) {
@@ -23,7 +24,11 @@
 
   .one-column {
     @include susy-media(tablet) {
-      @include span(3 of $susy-tablet);
+      @include span(4.5 of $susy-tablet);
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
     }
 
     @include susy-media(desktop) {
@@ -38,13 +43,30 @@
     }
   }
 
-  &__item {
-    display: none;
-    width: 100%;
+  .last {
+    margin-top: rem(49px);
 
     @include susy-media(tablet) {
-      display: block;
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+    .list--flat {
+      display: none;
+    }
+
+    &.is-active {
+      .list--flat {
+        display: block;
+      }
+    }
+
+    @include susy-media(tablet) {
       margin-bottom: rem(10px);
+      .list--flat {
+        display: block;
+      }
     }
 
     @include susy-media(desktop) {
@@ -57,17 +79,36 @@
         padding-right: 0;
       }
     }
-
-    &.has-social {
-      display: block;
-    }
   }
 
   &__title {
     border-bottom: 1px solid $gray-da;
-    font-size: rem(20px);
-    margin-bottom: rem(34px);
-    padding-bottom: rem(22px);
+    font-size: rem(16px);
+    margin-bottom: rem(25px);
+    padding-bottom: rem(12px);
+
+    @include susy-media(tablet) {
+      font-size: rem(20px);
+      margin-bottom: rem(34px);
+      padding-bottom: rem(22px);
+    }
+
+    @include susy-media(mobileOnly) {
+      position: relative;
+
+      &:before {
+        content: '\f107';
+        font-family: 'abaxis';
+        line-height: 1;
+        position: absolute;
+        right: rem(5px);
+        top: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 
