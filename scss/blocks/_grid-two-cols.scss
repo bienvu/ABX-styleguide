@@ -11,18 +11,17 @@
       position: absolute;
       top: 0;
       z-index: -1;
+      width: 50%;
     }
 
     &:before {
       background-color: $gray-f8;
       left: 0;
-      width: 64%;
     }
 
     &:after {
       background-color: $blue-ea;
       right: 0;
-      width: 36%;
     }
   }
 
@@ -64,7 +63,6 @@
     @include susy-media(desktop) {
       @include span(4 of 12 last);
       padding: 0 0 0 rem(78px);
-      background-color: transparent;
       margin: 0;
     }
 	}

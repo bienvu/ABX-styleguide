@@ -135,11 +135,13 @@
     margin-top: rem(79px);
   }
 
-  .main-menu > li > a {
+  .main-menu > li > a,
+  .navigation-dropdown > li > a {
     @include susy-media(tablet) {
       padding: rem(18px 15px);
     }
   }
+
 
   .header {
     &__logo {

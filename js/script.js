@@ -18,6 +18,18 @@
   //   },
   // });
 
+  var classMode = 'sticky',
+    $header = $('.header'),
+  stickyFunctional = function () {
+    if ($(window).scrollTop() > 0) {
+      $header.addClass(classMode);
+    } else {
+      $header.removeClass(classMode);
+    }
+  };
+
+  $(window).on('scroll', stickyFunctional).resize();
+
   // Add  functionality here.
   // Call chosen for select.
   $("select").chosen();
