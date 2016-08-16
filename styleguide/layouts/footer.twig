@@ -57,72 +57,48 @@
             <li><a href="#" title="link">Abaxis University</a></li>
           </ul>
         </div>
-        <div class="two-columns">
-          <div class="footer-top__item">
-            <h2 class="footer-top__title">Corporate</h2>
-            <ul class="list--flat">
-              <li><a href="#" title="link">Investor Relations</a></li>
-              <li><a href="#" title="link">About Us</a></li>
-              <li><a href="#" title="link">Careers</a></li>
-              <li><a href="#" title="link">Contact Us</a></li>
-            </ul>
+        <div class="footer-top__item one-column">
+          <h2 class="footer-top__title">Corporate</h2>
+          <ul class="list--flat">
+            <li><a href="#" title="link">Investor Relations</a></li>
+            <li><a href="#" title="link">About Us</a></li>
+            <li><a href="#" title="link">Careers</a></li>
+            <li><a href="#" title="link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-top__item last one-column">
+          <div class="block-counter">
+            <div class="block-counter__item">
+              <div class="block-counter__title">Piccolos in use (US): <span>*</span></div>
+              <div class="block-counter__numbers">
+                <span class="block-counter__numbers--bold space-right">5</span>
+                <span>2</span>
+                <span>2</span>
+                <span>5</span>
+              </div>
+            </div>
+            <div class="block-counter__item">
+              <div class="block-counter__title">Patients tested (US): <span>*</span></div>
+              <div class="block-counter__numbers">
+                <span class="block-counter__numbers--bold">1</span>
+                <span class="block-counter__numbers--bold space-right">5</span>
+                <span>1</span>
+                <span>6</span>
+                <span class="space-right">4</span>
+                <span>6</span>
+                <span>3</span>
+                <span>8</span>
+              </div>
+            </div>
           </div>
 
-          {% if title_footer_col is not empty %}
-            <div class="footer-top__item last hidden-on-mobileTabletOnly">
-              <h2 class="footer-top__title">{{ title_footer_col }}</h2>
-              <ul class="list--flat">
-                {% for item in link_footer %}
-                  <li><a href="{{ item.href }}" title="link">{{ item.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-            <div class="footer-top__item last has-social hidden-on-destopOnly">
-              <ul class="block-social">
-                {% for item in social %}
-                  <li class="block-social__item">
-                   <a class="block-social__link {{ item.class }}" target="_blank" href="#">{{ item.text }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% else %}
-            <div class="footer-top__item last has-social">
-            	<div class="block-counter">
-								<div class="container">
-									<div class="block-counter__item">
-										<div class="block-counter__title">Piccolos in use (US): <span>*</span></div>
-										<div class="block-counter__numbers">
-											<span class="block-counter__numbers--bold space-right">5</span>
-											<span>2</span>
-											<span>2</span>
-											<span>5</span>
-										</div>
-									</div>
-									<div class="block-counter__item">
-										<div class="block-counter__title">Patients tested (US): <span>*</span></div>
-										<div class="block-counter__numbers">
-											<span class="block-counter__numbers--bold">1</span>
-											<span class="block-counter__numbers--bold space-right">5</span>
-											<span>1</span>
-											<span>6</span>
-											<span class="space-right">4</span>
-											<span>6</span>
-											<span>3</span>
-											<span>8</span>
-										</div>
-									</div>
-								</div>
-							</div>
-              <ul class="block-social">
-                {% for item in social %}
-                  <li class="block-social__item">
-                   <a class="block-social__link {{ item.class }}" target="_blank" href="#">{{ item.text }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endif %}
+          <ul class="block-social">
+            {% for item in social %}
+              <li class="block-social__item">
+               <a class="block-social__link {{ item.class }}" target="_blank" href="#">{{ item.text }}</a>
+              </li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </div>

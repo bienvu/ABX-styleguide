@@ -1,9 +1,10 @@
 // Block call to action.
 
 .block-cta {
-  position: relative;
+  overflow: hidden;
   padding-bottom: rem(34px);
   padding-top: rem(30px);
+  position: relative;
 
   @include susy-media(tablet) {
     padding-bottom: rem(70px);
@@ -122,6 +123,10 @@
     .block-cta {
       &__content {
         text-align: left;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -138,6 +143,10 @@
     .block-cta {
       &__content {
         text-align: right;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -147,6 +156,10 @@
     .block-cta__content {
       &__inner {
         text-align: left;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -163,6 +176,10 @@
     .block-cta__content {
       &__inner {
         text-align: right;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -172,6 +189,10 @@
     .block-cta__content {
       &__link {
         text-align: left;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -188,6 +209,10 @@
     .block-cta__content {
       &__link {
         text-align: right;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
       }
     }
   }
@@ -200,12 +225,24 @@
 
         @include susy-media(tablet) {
           max-width: 85%;
-          padding: 0;
         }
 
         @include susy-media(desktop) {
           max-width: 69%;
           padding: 0;
+        }
+      }
+
+      &__title {
+        @include susy-media(tabletSmallOnly) {
+          font-size: rem(35px);
+        }
+      }
+
+      &__body {
+        @include susy-media(tabletSmallOnly) {
+          font-size: rem(15px);
+          margin-bottom: rem(15px);
         }
       }
     }
@@ -251,13 +288,6 @@
     padding: rem(24px 0 34px 0);
     position: relative;
     overflow: hidden;
-
-    .btn {
-      @include susy-media(mobileOnly) {
-        background-color: transparent;
-        border: 1px solid $white;
-      }
-    }
   }
 
   // Modifiers for background
@@ -289,43 +319,4 @@
       background-image: url($image-path + 'cta-hero-darkolivegreen.jpg');
     }
   }
-
-  // &--corporate {
-  //   padding-bottom: rem(35px);
-  //   padding-top: rem(24px);
-
-  //   @include susy-media(tablet) {
-  //     padding-bottom: rem(128px);
-  //     padding-top: rem(102px);
-  //   }
-
-  //   .block-cta {
-  //     &__content {
-  //       &__title {
-  //         margin-bottom: rem(25px);
-
-  //         @include susy-media(tablet) {
-  //           margin-bottom: rem(38px);
-  //         }
-  //       }
-
-  //       &__body {
-  //         margin-bottom: rem(36px);
-  //       }
-  //     }
-  //   }
-  // }
-
-  // &--reference-center {
-  //   @include susy-media(mobileOnly) {
-  //     .block-cta {
-  //       &__content {
-  //         &__title {
-  //           font-size: rem(30px);
-  //           margin-bottom: rem(25px);
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
