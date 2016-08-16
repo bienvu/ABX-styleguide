@@ -159,12 +159,14 @@ External Printer/LIS/EMR capable</p>',
         </div>
         <div class="grid-two-cols__right">
           {% set ClassBlock = 'block-contact-info--has-border' %}
+          {% set margin_class = 'bottom-space' %}
           {% set contactInfo = [
               {
                 'title': 'NEEDS HELP?',
                 'body': 'For Piccolo tectnical support call Abaxis Medical at',
                 'phone': '(800) 822-2947, prompt 2',
-                'link' : 'SUPPORT PAGE'
+                'link' : 'SUPPORT PAGE',
+                'class' : 'bottom-large-space'
               },
               {
                 'title': 'ORDERING/CUSTOMER SERVICE',

@@ -103,57 +103,19 @@
     padding-top: rem(20px);
     padding-bottom: rem(50px);
 
-    @include susy-media(tabletOnly) {
-      padding-top: rem(40px);
-      padding-left: rem(30px);
-      padding-right: rem(30px);
+    @include susy-media(tablet) {
+      padding-top: rem(40px);;
     }
 
     @include susy-media(desktop) {
       padding-top: rem(77px);
     }
 
-    &__wrap {
-
-        >.block-contact-info__item {
-          @include susy-media(tabletOnly) {
-            @include span(4 of 8);
-          }
-        }
-        >.block-contact-info__item__wrap {
-          @include susy-media(tabletOnly) {
-            @include span(4 of 8 last);
-          }
-        }
-    }
-
-    &__item__wrap{
-      @include susy-media(mobileOnly) {
-        margin-top: rem(70px);
-      }
-
-      @include susy-media(desktop) {
-        margin-top: rem(120px);
-      }
-    }
-
-    &__body {
-      line-height: rem(20px);
-    }
-  }
-
-  .block-faqs {
-    &__item {
-      &__body {
-        display: none;
-      }
-      
-      &.is-active {
-        .block-faqs__item {
-          &__body {
-            display: block;
-          }
-        }
+    .block-contact-info__item {
+      @include susy-media(tabletOnly) {
+        width: 50%;
+        float: left;
+        padding: 0 5px;
       }
     }
   }

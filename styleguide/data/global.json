@@ -71,10 +71,6 @@
       "group":"component"
     },
     {
-      "name":"block-counter",
-      "group":"component"
-    },
-    {
       "name":"panels-menu",
       "group":"component"
     }

@@ -44,7 +44,7 @@
 
       @include susy-media(mobileOnly) {
         line-height: rem(18px);
-        margin-bottom: 0;
+        margin-bottom: rem(10px);
       }
 
       &:hover {
@@ -54,10 +54,22 @@
 
     &__body {
       line-height: rem(18px);
-      padding-left: rem(18px);
 
       @include susy-media(tablet) {
+        padding-left: rem(18px);
         line-height: rem(25px);
+      }
+    }
+
+    &__body {
+      display: none;
+    }
+
+    &.is-active {
+      .block-faqs__item {
+        &__body {
+          display: block;
+        }
       }
     }
   }

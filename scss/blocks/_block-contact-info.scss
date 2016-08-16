@@ -34,9 +34,9 @@
 
   &__body {
     line-height: rem(25px);
+    font-size: rem(18px);
 
     @include susy-media(mobileOnly) {
-      font-size: rem(18px);
       line-height: rem(18px);
       margin-bottom: rem(8px);
     }
@@ -44,7 +44,7 @@
 
   &__link {
     margin-top: rem(26px);
-    
+
     @include susy-media(mobileOnly) {
       text-align: center;
     }
@@ -86,6 +86,14 @@
     }
   }
 
+  .bottom-large-space {
+    margin-bottom: 70px;
+
+    @include susy-media(desktop) {
+      margin-bottom: 120px;
+    }
+  }
+
   // Modifier style.
   &--has-border {
     .block-contact-info {
@@ -97,6 +105,10 @@
         @include susy-media(mobileOnly) {
           margin-bottom: rem(10px);
         }
+      }
+
+      &__body {
+        line-height: rem(20px);
       }
     }
   }

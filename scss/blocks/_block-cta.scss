@@ -1,9 +1,10 @@
 // Block call to action.
 
 .block-cta {
-  position: relative;
+  overflow: hidden;
   padding-bottom: rem(34px);
   padding-top: rem(30px);
+  position: relative;
 
   @include susy-media(tablet) {
     padding-bottom: rem(70px);
@@ -318,43 +319,4 @@
       background-image: url($image-path + 'cta-hero-darkolivegreen.jpg');
     }
   }
-
-  // &--corporate {
-  //   padding-bottom: rem(35px);
-  //   padding-top: rem(24px);
-
-  //   @include susy-media(tablet) {
-  //     padding-bottom: rem(128px);
-  //     padding-top: rem(102px);
-  //   }
-
-  //   .block-cta {
-  //     &__content {
-  //       &__title {
-  //         margin-bottom: rem(25px);
-
-  //         @include susy-media(tablet) {
-  //           margin-bottom: rem(38px);
-  //         }
-  //       }
-
-  //       &__body {
-  //         margin-bottom: rem(36px);
-  //       }
-  //     }
-  //   }
-  // }
-
-  // &--reference-center {
-  //   @include susy-media(mobileOnly) {
-  //     .block-cta {
-  //       &__content {
-  //         &__title {
-  //           font-size: rem(30px);
-  //           margin-bottom: rem(25px);
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
