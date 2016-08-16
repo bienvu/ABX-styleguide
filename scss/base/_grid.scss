@@ -116,6 +116,9 @@ $susy-media: (
     max-width: em($desktop - 1) * 1em,
   ),
 
+  // min-width: 640px
+  mobile-large: em($mobile-large) * 1em,
+
   // min-width: 768px
   tablet: em($tablet) * 1em,
 
@@ -130,6 +133,9 @@ $susy-media: (
 
   // min-width: 1440px
   desktop-superwide: em($desktop-superwide) * 1em,
+
+  // min-width: 1760px
+  desktop-superwide-large: em($desktop-superwide-large) * 1em,
 
   // min-width: 1440px
   desktop-superwide-large-only: (

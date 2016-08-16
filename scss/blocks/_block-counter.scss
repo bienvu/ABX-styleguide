@@ -7,7 +7,7 @@
   }
 
   @include susy-media(tablet) {
-    margin-bottom: rem(30px);
+    margin-bottom: 0;
   }
 
   &__item {
@@ -48,7 +48,7 @@
       @include susy-media(tablet) {
         height: rem(45px);
         line-height: 1.9;
-        margin-bottom: rem(1px);   
+        margin-bottom: rem(1px);
         width: rem(32px);
       }
 

@@ -22,24 +22,6 @@
     padding: rem(67px 0 64px);
   }
 
-  .one-column {
-    @include susy-media(tablet) {
-      width: 50%;
-      float: left;
-    }
-
-    @include susy-media(desktop) {
-      width: 25%;
-    }
-  }
-
-  .two-columns {
-    @include susy-media(tabletOnly) {
-      @include span(3 of $susy-tablet last);
-      margin-bottom: rem(38px);
-    }
-  }
-
   .last {
     margin-top: rem(49px);
 
@@ -62,6 +44,8 @@
     @include susy-media(tablet) {
       margin-bottom: rem(10px);
       padding: rem(0 10px);
+      width: 50%;
+      float: left;
 
       .list--flat {
         display: block;
@@ -73,6 +57,7 @@
       margin-right: 0;
       padding-left: 0;
       padding-right: rem(37px);
+      width: 25%;
 
       &.last {
         padding-right: 0;

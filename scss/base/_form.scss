@@ -1,16 +1,4 @@
 // Form style.
-
-input {
-  box-sizing: border-box;
-  max-width: 100%;
-
-  &[type='submit'] {
-    @extend %btn;
-    line-height: inherit;
-    border-radius: 0;
-  }
-}
-
 input:not([type="submit"]),
 textarea {
   border: 1px solid $gray-dd;
@@ -41,6 +29,34 @@ textarea {
   box-shadow: none;
 }
 
+input {
+  box-sizing: border-box;
+  max-width: 100%;
+
+  &[type='submit'] {
+    @extend %btn;
+    @extend %btn--border-blue;
+    border-radius: 0;
+    line-height: inherit;
+
+    &.btn--border-red {
+      @extend %btn--border-red;
+    }
+
+    &.btn--border-blue {
+      @extend %btn--border-blue;
+    }
+
+    &.btn--bg-red {
+      @extend %btn--bg-red;
+    }
+
+    &.btn--bg-blue {
+      @extend %btn--bg-blue;
+    }
+  }
+}
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -52,6 +68,7 @@ input[type="submit"] {
 
 button {
   @extend %btn;
+  @extend %btn--border-blue;
 
   &:active,
   &:focus,
@@ -60,6 +77,22 @@ button {
     color: inherit;
     outline: 0;
     color: $blue;
+  }
+
+  &.btn--border-red {
+    @extend %btn--border-red;
+  }
+
+  &.btn--border-blue {
+    @extend %btn--border-blue;
+  }
+
+  &.btn--bg-red {
+    @extend %btn--bg-red;
+  }
+
+  &.btn--bg-blue {
+    @extend %btn--bg-blue;
   }
 }
 

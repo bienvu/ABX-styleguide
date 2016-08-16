@@ -83,10 +83,26 @@
 
   // Modifier height.
   &--height-small {
-    height: rem(500px);
+    height: rem(400px);
 
     @include susy-media(desktop) {
       height: rem(510px);
+    }
+
+    .block-cta {
+      &__image {
+        img {
+          @include susy-media(tablet-landscape) {
+            height: auto;
+            width: 105%;
+          }
+
+          @include susy-media(desktop-superwide) {
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
     }
   }
 

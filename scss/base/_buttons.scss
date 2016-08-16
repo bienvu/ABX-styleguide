@@ -1,10 +1,7 @@
 %btn,
 .btn {
   @include gotham-bold;
-  background-color: transparent;
   border: 1px solid transparent;
-  border-color: $blue-light;
-  color: $abbey;
   display: inline-block;
   font-size: rem(15px);
   margin-bottom: 10px;
@@ -19,7 +16,6 @@
   }
 
   &:hover {
-    color: darken($abbey, 5%);
     cursor: pointer;
     transition: .3s;
   }
@@ -121,6 +117,7 @@
   &--border-blue {
     color: $abbey;
     border-color: $blue-light;
+    background-color: transparent;
 
     &:hover {
       color: $blue;
@@ -131,6 +128,7 @@
   &--border-red {
     color: $abbey;
     border-color: $red-light;
+    background-color: transparent;
 
     &:hover {
       color: $red-light;

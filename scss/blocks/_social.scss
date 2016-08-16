@@ -7,6 +7,7 @@
 
   @include susy-media(tablet) {
     text-align: left;
+    padding-top: rem(30px);
   }
 
   &__item {
