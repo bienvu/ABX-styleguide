@@ -24,15 +24,12 @@
 
   .one-column {
     @include susy-media(tablet) {
-      @include span(4.5 of $susy-tablet);
-
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
+      width: 50%;
+      float: left;
     }
 
     @include susy-media(desktop) {
-      @include span(3 of $susy-desktop);
+      width: 25%;
     }
   }
 
@@ -64,18 +61,20 @@
 
     @include susy-media(tablet) {
       margin-bottom: rem(10px);
+      padding: rem(0 10px);
+
       .list--flat {
         display: block;
       }
     }
 
     @include susy-media(desktop) {
-      @include span(3 of $susy-desktop);
       margin-bottom: rem(40px);
+      margin-right: 0;
+      padding-left: 0;
       padding-right: rem(37px);
 
       &.last {
-        @include last;
         padding-right: 0;
       }
     }

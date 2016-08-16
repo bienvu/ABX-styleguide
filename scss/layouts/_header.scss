@@ -84,6 +84,8 @@
     }
 
     &__right {
+      position: inherit;
+
       @include susy-media(desktop) {
         float: right;
       }
