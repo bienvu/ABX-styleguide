@@ -31,27 +31,27 @@
     display: flex;
     justify-content: center;
 
-    @include susy-media(mobileTabletOnly) {
+    @include susy-media(mobileOnly) {
       flex-wrap: wrap;
     }
   }
 
   &__item {
     color: $white;
-    text-align: center;
-    margin-bottom: rem(2px);
-    width: 25%;
     float: left;
+    margin-bottom: rem(2px);
+    text-align: center;
+    width: 25%;
 
     @include susy-media(tablet) {
-      width: calc(100% / 7);
       margin-bottom: rem(23px);
+      width: calc(100% / 7);
     }
 
     &__icon {
       display: block;
-      margin-bottom: rem(3px);
       font-size: rem(48px);
+      margin-bottom: rem(3px);
 
       @include susy-media(tablet) {
         font-size: rem(64px);
@@ -66,12 +66,12 @@
     &__title {
       align-items: center;
       display: flex;
+      font-size: rem(12px);
       justify-content: center;
       line-height: rem(13px);
       margin: 0 auto rem(15px);
       max-width: rem(100px);
       min-height: rem(35px);
-      font-size: rem(12px);
 
       @include susy-media(tablet) {
         font-size: rem(15px);
@@ -115,9 +115,9 @@
         }
 
         &__title {
-          max-width: inherit;
           font-size: rem(15px);
           line-height: rem(20px);
+          max-width: inherit;
 
           @include susy-media(tablet) {
             padding: rem(0 15px);
@@ -137,13 +137,13 @@
   &--grid-full {
     .block-product-icon {
       &__item {
-        width: 24%;
         float: left;
         margin-bottom: rem(2px);
+        width: 24%;
 
         @include susy-media(tablet) {
-          width: calc(100% / 7);
           margin-bottom: rem(45px);
+          width: calc(100% / 7);
         }
       }
     }
@@ -157,13 +157,13 @@
 
     .block-product-icon {
       &__item {
-        width: 49%;
         float: left;
         margin-bottom: rem(15px);
+        width: 49%;
 
         @include susy-media(tablet) {
-          width: 24%;
           margin-bottom: rem(45px);
+          width: 24%;
         }
       }
     }
