@@ -168,6 +168,7 @@
       }
     }
 
+    &__navigation-dropdown,
     &__navigation,
     &__search {
       @include susy-media(mobileOnly) {
@@ -189,7 +190,7 @@
         height: rem(56px);
 
         &:before {
-          line-height: rem(56px);
+          line-height: 3.5;
         }
       }
     }
