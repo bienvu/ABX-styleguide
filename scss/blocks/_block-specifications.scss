@@ -81,18 +81,24 @@
   &__image {
     float: left;
     margin-bottom: rem(19px);
-    padding: rem(0 21px 0 7px);
+    padding: 0;
     width: span(2 of $susy);
 
     @include susy-media(tablet) {
       float: none;
       margin-bottom: rem(38px);
-      padding: 0;
       width: auto;
     }
 
     @include susy-media(desktop) {
       margin-bottom: rem(53px);
+      padding: rem(0 21px 0 7px);
+    }
+
+    img {
+      @include susy-media(desktop) {
+        max-width: rem(230px);
+      }
     }
   }
 

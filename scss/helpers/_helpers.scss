@@ -121,6 +121,14 @@
   }
 }
 
+.large-margin-bottom {
+  margin-bottom: 45px;
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(138px);
+  }
+}
+
 // Paddings
 %padding-one-column,
 .padding-one-column {

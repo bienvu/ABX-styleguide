@@ -443,3 +443,35 @@ sub {
     width: 100%;
   }
 }
+
+.tabs {
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  ul.primary {
+    border: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 3px;
+
+    li {
+      display: block;
+      float: left;
+      margin: 0 5px 0 0;
+      vertical-align: bottom;
+
+      a {
+        border: 1px solid $gray-da;
+        transition: .3s;
+
+        &:hover,
+        &.is-active {
+          background-color: $blue;
+          border-color: $blue;
+          color: $white;
+          transition: .3s;
+        }
+      }
+    }
+  }
+}

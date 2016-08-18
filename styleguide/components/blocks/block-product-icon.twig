@@ -3,7 +3,7 @@
 {% block blockproduct %}
   <div class="block-product-icon {{ classProduct }}">
     <div class="container">
-      <h2 class="section-title">{{ product_icon_title }}</h2>
+      <h2 class="section-title {{ product_class_title }}">{{ product_icon_title }}</h2>
       <div class="section-description">{{ product_icon_description }}</div>
       <div class="block-product-icon__list">
         {% for item in blockproduct %}

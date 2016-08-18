@@ -29,8 +29,11 @@
   &__list {
     @extend %clearfix;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+
+    @include susy-media(mobileTabletOnly) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -89,26 +92,42 @@
 
   // Icon modifiers
   &--large {
-    .block-product-icon__item {
-      &__icon {
-        @include susy-media(tablet) {
-          font-size: rem(86px);
-        }
+    padding-bottom: rem(23px);
+    padding-top: rem(57px);
+
+    @include susy-media(desktop) {
+      padding-bottom: rem(27px);
+      padding-top: rem(127px);
+    }
+
+    .block-product-icon {
+      &__list {
+        flex-wrap: wrap;
       }
 
-      &__title {
-        max-width: inherit;
-        font-size: rem(15px);
-        line-height: rem(20px);
+      &__item {
+        &__icon {
+          font-size: rem(52px);
 
-        @include susy-media(tablet) {
-          padding: rem(0 15px);
+          @include susy-media(tablet-landscape) {
+            font-size: rem(86px);
+          }
         }
 
-        @include susy-media(desktop) {
-          font-size: rem(20px);
-          line-height: rem(31px);
-          padding: rem(0 50px);
+        &__title {
+          max-width: inherit;
+          font-size: rem(15px);
+          line-height: rem(20px);
+
+          @include susy-media(tablet) {
+            padding: rem(0 15px);
+          }
+
+          @include susy-media(desktop) {
+            font-size: rem(20px);
+            line-height: rem(31px);
+            padding: rem(0 50px);
+          }
         }
       }
     }
@@ -118,7 +137,7 @@
   &--grid-full {
     .block-product-icon {
       &__item {
-        width: 25%;
+        width: 24%;
         float: left;
         margin-bottom: rem(2px);
 
@@ -138,12 +157,12 @@
 
     .block-product-icon {
       &__item {
-        width: 50%;
+        width: 49%;
         float: left;
         margin-bottom: rem(15px);
 
         @include susy-media(tablet) {
-          width: 25%;
+          width: 24%;
           margin-bottom: rem(45px);
         }
       }
@@ -183,12 +202,6 @@
         }
       }
     }
-
-    .section-title {
-      @include susy-media(desktop) {
-        margin-bottom: rem(134px);
-      }
-    }
   }
 
   &--type-1 {
@@ -206,7 +219,7 @@
 
         @include susy-media(mobileOnly) {
           margin: rem(0 0 0 -4px);
-          width: 50%;
+          width: 49%;
         }
 
         @include susy-media(tablet-landscape) {

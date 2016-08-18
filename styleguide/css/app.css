@@ -204,10 +204,7 @@
 .component--demo .section-title.margin-top-none{
   margin-top: 0;
 }
-.component--demo .section-title{
-  font-size: 40px;
-  margin-top: 50px;
-}
+
 .section-description.margin-bottom {
   margin-bottom: 10px;
 }

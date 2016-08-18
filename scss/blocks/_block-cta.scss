@@ -83,7 +83,7 @@
 
   // Modifier height.
   &--height-small {
-    height: rem(400px);
+    height: rem(354px);
 
     @include susy-media(desktop) {
       height: rem(510px);

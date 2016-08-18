@@ -33,7 +33,7 @@
     }
   }
 
-	&__left {
+  &__left {
     background-color: $gray-f8;
     margin: 0 rem(-$container-margin);
     padding: 0 rem($container-margin);
@@ -48,9 +48,9 @@
       padding: 0 0 rem(107px) 0;
       margin: 0;
     }
-	}
+  }
 
-	&__right {
+  &__right {
     padding: rem(32px $container-margin 0 $container-margin);
     background-color: $blue-ea;
     margin: 0 rem(-$container-margin);
@@ -65,7 +65,7 @@
       padding: 0 0 0 rem(78px);
       margin: 0;
     }
-	}
+  }
 
   // Overide style block-tabs.
   .block-tabs {

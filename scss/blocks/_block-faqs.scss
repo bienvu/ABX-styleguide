@@ -50,10 +50,20 @@
       &:hover {
         cursor: pointer;
       }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     &__body {
+      display: none;
       line-height: rem(18px);
+      padding-left: rem(18px);
+
+      &.is-active {
+        display: block;
+      }
 
       @include susy-media(tablet) {
         padding-left: rem(18px);
