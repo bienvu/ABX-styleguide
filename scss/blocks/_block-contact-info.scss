@@ -94,25 +94,6 @@
     }
   }
 
-  // Modifier style.
-  &--has-border {
-    .block-contact-info {
-       &__title {
-        padding-bottom: rem(20px);
-        border-bottom: 1px solid $gray-dd;
-        font-size: rem(15px);
-
-        @include susy-media(mobileOnly) {
-          margin-bottom: rem(10px);
-        }
-      }
-
-      &__body {
-        line-height: rem(20px);
-      }
-    }
-  }
-
   // Modifier use event single page.
   &--has-description {
     padding-top: rem(31px);
@@ -198,7 +179,7 @@
 
       @include susy-media(tablet) {
         float: right;
-        width: span(3 of 7);
+        width: 50%;
         margin-bottom: rem(39px);
       }
 
@@ -206,16 +187,6 @@
         float: none;
         margin-bottom: rem(69px);
         width: auto;
-      }
-
-      .block-contact-info {
-        &__title {
-          margin-bottom: rem(5px);
-
-          @include susy-media(tablet) {
-            margin-bottom: rem(3px);
-          }
-        }
       }
     }
 
@@ -253,6 +224,27 @@
 
       &__body {
         margin-bottom: rem(17px);
+      }
+    }
+  }
+
+
+
+  // Modifier style.
+  &--has-border {
+    .block-contact-info {
+       &__title {
+        padding-bottom: rem(20px);
+        border-bottom: 1px solid $gray-dd;
+        font-size: rem(15px);
+
+        @include susy-media(mobileOnly) {
+          margin-bottom: rem(10px);
+        }
+      }
+
+      &__body {
+        line-height: rem(20px);
       }
     }
   }

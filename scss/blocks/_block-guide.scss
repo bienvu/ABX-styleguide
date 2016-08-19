@@ -9,7 +9,7 @@
 
   @include susy-media(desktop) {
     padding-bottom: rem(77px);
-    padding-top: rem(79px);
+    padding-top: rem(77px);
   }
 
   .section-title {
@@ -138,14 +138,14 @@
     margin-top: rem(40px);
 
     @include susy-media(tablet) {
-      margin-top: rem(76px);
+      margin-top: rem(75px);
     }
 
     a {
       margin-bottom: rem(20px);
 
       @include susy-media(tablet) {
-        margin: 0 rem(17.5px);
+        margin: 0 rem(18px);
       }
     }
   }
