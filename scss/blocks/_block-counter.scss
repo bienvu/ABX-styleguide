@@ -39,7 +39,6 @@
       float: left;
       height: rem(35px);
       line-height: 2.1;
-      margin-right: rem(1px);
       margin-right: rem(2px);
       text-align: center;
       width: rem(28px);
@@ -47,7 +46,8 @@
       @include susy-media(tablet) {
         height: rem(45px);
         line-height: 1.9;
-        margin-bottom: rem(1px);
+        margin-bottom: rem(1px); 
+        margin-right: rem(1px);  
         width: rem(32px);
       }
 

@@ -17,23 +17,27 @@
   }
 
   &__content {
-    @include container($susy-desktop);
+    @include container($susy);
     padding: 0;
     position: relative;
     z-index: 5;
 
+    @include susy-media(tablet) {
+      @include container($susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      @include container($susy-desktop);
+    }
+
     &__inner {
       display: inline-block;
-
-      @include susy-media(tablet) {
-        padding: rem(0 40px);
-      }
     }
 
     &__title {
       font-size: rem(25px);
-      margin-bottom: rem(25px);
       line-height: 1.2;
+      margin-bottom: rem(25px);
 
       @include susy-media(tablet) {
         font-size: rem(50px);
@@ -69,11 +73,11 @@
 
     img {
       @extend %img-cover;
-      width: auto;
       height: 100%;
       max-width: inherit;
       min-height: inherit;
       min-width: inherit;
+      width: auto;
 
       @include susy-media(desktop-superwide) {
         width: 100%;
@@ -239,15 +243,12 @@
   &--width-large {
     .block-cta__content {
       &__inner {
-        padding: rem(0 10px);
-
         @include susy-media(tablet) {
           max-width: 85%;
         }
 
         @include susy-media(desktop) {
           max-width: 69%;
-          padding: 0;
         }
       }
 
@@ -269,8 +270,6 @@
   &--width-small {
     .block-cta__content {
       &__inner {
-        padding: rem(0 10px);
-
         @include susy-media(tablet) {
           width: 60%;
         }
@@ -303,9 +302,9 @@
     background-size: cover;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     padding: rem(24px 0 34px 0);
     position: relative;
-    overflow: hidden;
 
     .block-cta {
       &__content {

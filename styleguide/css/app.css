@@ -197,11 +197,12 @@
   padding-top: 20px;
 }
 
-.component--demo .block-stream .section-title {
-  margin-top: 50px;
-}
 .component--demo .block-stream  {
   padding-top: 0;
+}
+
+#grid-slider .section-title {
+  margin-top: 50px;
 }
 
 .component--demo .section-title.margin-top-none{
