@@ -197,6 +197,9 @@
   padding-top: 20px;
 }
 
+.component--demo .block-stream .section-title {
+  margin-top: 50px;
+}
 .component--demo .block-stream  {
   padding-top: 0;
 }
