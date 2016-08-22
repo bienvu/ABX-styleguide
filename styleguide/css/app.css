@@ -201,6 +201,10 @@
   padding-top: 0;
 }
 
+#grid-slider .section-title {
+  margin-top: 50px;
+}
+
 .component--demo .section-title.margin-top-none{
   margin-top: 0;
 }

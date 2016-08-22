@@ -1,6 +1,5 @@
 .block-counter {
   margin-bottom: rem(21px);
-  overflow: hidden;
 
   @include susy-media(mobileOnly) {
     border-bottom: 1px solid $gray-da;

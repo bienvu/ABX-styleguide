@@ -307,6 +307,11 @@ sub {
   text-align: center;
 
   @include susy-media(tablet) {
+    font-size: rem(32px);
+    line-height: rem(40px);
+  }
+
+  @include susy-media(tablet-landscape) {
     font-size: rem(50px);
     line-height: rem(47px);
     margin-bottom: rem(10px);
