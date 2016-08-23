@@ -83,6 +83,24 @@
         }
       }
     }
+
+    &.two-cols {
+      li {
+        @include susy-media(tablet) {
+          @include gallery(6 of $susy-desktop);
+        }
+      }
+    }
+
+    &.border-gray {
+      li {
+        border-color: $gray-ee;
+
+        &:hover {
+          border-color: lighten($blue-light, 20%);
+        }
+      }
+    }
   }
 
   .view-more {
