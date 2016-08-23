@@ -308,7 +308,9 @@
 
     .block-cta {
       &__content {
-        margin: 0;
+        @include susy-media(desktop) {
+          margin: 0;
+        }
       }
     }
   }
