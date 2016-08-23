@@ -253,13 +253,13 @@
       }
 
       &__title {
-        @include susy-media(tabletSmallOnly) {
+        @include susy-media(tabletOnly) {
           font-size: rem(35px);
         }
       }
 
       &__body {
-        @include susy-media(tabletSmallOnly) {
+        @include susy-media(tabletOnly) {
           font-size: rem(15px);
           margin-bottom: rem(15px);
         }
